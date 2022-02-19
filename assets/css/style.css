@@ -27,6 +27,7 @@
     color: white;
     margin: 0 auto;
     font-size: 25px;
+    padding: 0 42px;
 }	
 .footer .item-footer {
     width: 25%;
@@ -73,5 +74,5 @@
     content: "";
     clear: both;
     display: table;
-  }
+}
 /* End footer */
