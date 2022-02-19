@@ -1,6 +1,7 @@
-h1 {
-    color: red;
-}
+/* header */
+/* Duy dán css vào chỗ này */
+/* End header */
+
 /* footer */
 .footer {
     margin: auto;
@@ -96,3 +97,5 @@ h1 {
 .mauchu {
     color: #ff0000;
 }
+
+/* End footer */

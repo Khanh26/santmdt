@@ -1,0 +1,2 @@
+<!-- Duy dán header vào đây phần này cho có cái code html thôi ko cần cái đoạn docuement tại bên kia có rồi -->
+<!-- Ảnh thì tạo trong img thêm 1 folder header để vào đó rồi src tới nó như ở footer -->

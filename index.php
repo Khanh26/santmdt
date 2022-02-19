@@ -14,7 +14,7 @@
         <!-- header -->
         <?php include('./view/layout/client/header.php'); ?>
         <!-- End header -->
-
+        
         <!-- footer -->
         <?php include('./view/layout/client/footer.php');?>
         <!-- End footer -->
