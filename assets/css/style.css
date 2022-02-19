@@ -17,9 +17,8 @@
 
 .footer_cobct {
     width: 100%;
-    height: 200px;
     background: #eaeaea;
-    padding: 10px 42px;
+    padding: 30px 42px;
     margin: auto -8px;
 }
 
@@ -32,7 +31,7 @@
 .footer .item-footer {
     width: 25%;
     float: right;
-    padding: auto 8px;    
+    padding: 0 8px;    
 }
 /* fix footer */
 .footer .link-footer, .content-footer {
@@ -64,4 +63,15 @@
     color:rgb(37, 189, 37);
 }
 
+.img-validate-footer {
+    object-fit: cover;
+    width: 53%;
+    margin-top: 23px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 /* End footer */

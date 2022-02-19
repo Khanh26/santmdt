@@ -1,5 +1,5 @@
 <div class="footer">
-    <div class="footer_cobct">
+    <div class="footer_cobct clearfix">
         <div class="item-footer">
             <h3 class="heading-footer">Kết nối với chúng tôi</h3>
                 <a href="" class="link-footer social-footer" title="facebook">
@@ -14,6 +14,7 @@
                 <a href="" class="link-footer social-footer" title="instagram">
                     <i class="fab fa-instagram" style="color:red;"></i>
                 </a>
+                <img class="img-validate-footer" src="http://localhost/santmdt/assets/img/footer/dkbct.png" alt="">
         </div>
 
         <div class="item-footer">
