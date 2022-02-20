@@ -16,7 +16,7 @@ function querySql($sql)
     $GLOBALS['conn']->close();
 }
 function queryEmptyData($sql) {
-    $GLOBALS['conn']->query($sql);
+    return $GLOBALS['conn']->query($sql);
 }
 
 function getAllAccount() {
@@ -24,6 +24,9 @@ function getAllAccount() {
     querySql($sql);
 }
 
+// function deleteAccount($ten_dang_nhap) {
+//     $sql 'DELETE '
+// }
 //  get action
 $action = explode("/",$_SERVER['PHP_SELF'])[count(explode("/",$_SERVER['PHP_SELF'])) - 1];
 // echo $action;
@@ -31,7 +34,8 @@ switch ($action) {
     case 'getAllAccount':
         getAllAccount();
         break;
-
+    case 'deleteAccount':
+        break;
     default:
         getAllAccount();
         break;
