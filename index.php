@@ -1,7 +1,3 @@
-<?php
-    include('./view/layout/client/header.php');
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,6 +14,10 @@
         <!-- header -->
         <?php include('./view/layout/client/header.php'); ?>
         <!-- End header -->
+
+        <!-- Content -->
+            <!-- Code trang chu o day -->
+        <!-- End content -->
 
         <!-- footer -->
         <?php include('./view/layout/client/footer.php');?>

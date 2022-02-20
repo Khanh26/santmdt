@@ -3,16 +3,16 @@
         <div class="item-footer">
             <h3 class="heading-footer">Kết nối với chúng tôi</h3>
                 <a href="" class="link-footer social-footer" title="facebook">
-                    <i class="fab fa-facebook-square" style="color:blue;"></i>
+                    <i class="fab fa-facebook-square"></i>
                 </a>
                 <a href="" class="link-footer social-footer" title="twitter">
-                    <i class="fab fa-twitter-square" style="color:blue;"></i>
+                    <i class="fab fa-twitter-square" ></i>
                 </a>
                 <a href="" class="link-footer social-footer" title="google+">
-                    <i class="fab fa-google-plus-square" style="color:red;"></i>
+                    <i class="fab fa-google-plus-square"></i>
                 </a>
                 <a href="" class="link-footer social-footer" title="instagram">
-                    <i class="fab fa-instagram" style="color:red;"></i>
+                    <i class="fab fa-instagram"></i>
                 </a>
                 <img class="img-validate-footer" src="http://localhost/santmdt/assets/img/footer/dkbct.png" alt="">
         </div>
@@ -51,15 +51,15 @@
 
         <div class="item-footer">
             <h3 class="heading-footer">VĂN PHÒNG CHÍNH</h3>
-            <p href="" class="content-footer">
+            <p class="content-footer">
                 <i class="fas fa-home icon-footer"></i>
                 Đại Học Cần Thơ
             </p>
-            <p href="" class="content-footer">
+            <p class="content-footer">
             <i class="fas fa-phone-alt icon-footer"></i>
                 <span>0939.937.886</span>
             </p>
-            <p href="" class="content-footer">
+            <p class="content-footer">
                 <i class="fas fa-envelope icon-footer"></i>
                 thegioivattunongnghiep@gmail.com
             </p>

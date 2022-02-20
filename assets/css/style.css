@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Kanit&family=Merriweather+Sans:wght@300&family=Noto+Serif:wght@700&display=swap');
+
 /* Reset css */
 * {
     padding: 0;
@@ -5,63 +7,227 @@
     box-sizing: border-box;
 }
 
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* header */
 /* Duy dán css vào chỗ này */
+#header {
+    width: 100%;
+    background-color: #30373D;
+    /* position: fixed; */
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+#he1 {
+
+    width: 15%;
+    margin-left: 2%;
+}
+
+#he2 {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#he2-1 {
+    /* background-color: #A8CA27; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+#search {
+    flex: 1;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    height: 80%;
+}
+
+#input {
+    flex-basis: 80%;
+    border-radius: 2px;
+    padding: 0 20px;
+    border: none;
+}
+
+#submit {
+    flex-basis: 15%;
+    background-color: #A8CA27;
+    border-radius: 2px;
+    cursor: pointer;
+    border: none;
+}
+
+#he2-2 {
+    /* background-color: olive; */
+    width: 100%;
+    height: 50%;
+
+}
+
+#luachon {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+#luachon a {
+    color: #cccccc;
+}
+
+
+#he4 {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+#he4-1, #he4-2 {
+    flex: 1;
+    /* background-color: rgb(30, 58, 119); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #A8CA27;
+}
+
+#cart, #wishlist {
+    /* background-color: rebeccapurple; */
+    flex-basis: 45%;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#header .icon-header {
+    margin-right: 8px;
+    font-size: 23px;
+    color: #A8CA27;
+}
+
+#header .link-header {
+    color: #cccccc;
+    font-size: 15px;
+    padding: 10px 12px;
+}
+
+#header .link-header:hover, #header .link-header:hover .icon-header {
+    color: rgb(37, 189, 37);;
+}
+
+/* .fa-store{
+    flex-basis: 20%;
+    font-size: 25px;
+    color: #A8CA27;
+    text-align: end;
+} */
+#a1 {
+    flex-basis: 10%;
+    font-size: 25px;
+    color: #A8CA27;
+    /* text-align: end; */
+}
+
+#a2 a {
+    flex-basis: 70%;
+    color: #cccccc;
+    font-size: 15px;
+}
+
+#he2 a:hover {
+    color: rgb(37, 189, 37);;
+}
+
+#header .icon-cart {
+    position: relative;
+}
+
+#header .count-cart {
+    position: absolute;
+    padding: 2px;
+    border: none;
+    border-radius: 18px;
+    font-size: 15px;
+    top: -9px;
+    right: -3px;
+    color: rgb(36, 36, 36);
+    background: rgb(253, 216, 53);
+}
 /* End header */
 
 /* footer */
 .footer {
     width: 100%;
-    background: #eaeaea;
+    background: #30373D;
+    color: #cccccc;
 }
 
 .footer_cobct {
     width: 100%;
-    background: #eaeaea;
     padding: 30px 42px;
     margin: auto -8px;
 }
 
-.footer_end{
+.footer_end {
     background: #666565;
     color: white;
     margin: 0 auto;
     font-size: 25px;
     padding: 0 42px;
-}	
+}
+
 .footer .item-footer {
     width: 25%;
     float: right;
-    padding: 0 8px;    
+    padding: 0 8px;
 }
+
 /* fix footer */
 .footer .link-footer, .content-footer {
     display: block;
-    text-decoration: none;
     color: black;
     margin-top: 14px;
     font-size: 18px;
     transition: all 0.2s;
+    color: #cccccc;
 }
 
 .footer .icon-footer {
-    color: green;
-    margin-right: 4px;  
+    color: #A8CA27;
+    margin-right: 4px;
 }
 
 .footer .heading-footer {
     text-transform: uppercase;
     font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Noto Serif', serif;
 }
 
 .footer .social-footer {
     display: inline-block;
     font-size: 35px;
     margin-right: 10px;
+    color: #cccccc;
 }
 
 .footer .link-footer:hover {
-    color:rgb(37, 189, 37);
+    color: rgb(37, 189, 37);
 }
 
 .img-validate-footer {
@@ -75,4 +241,5 @@
     clear: both;
     display: table;
 }
+
 /* End footer */
