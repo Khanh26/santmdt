@@ -1,3 +1,78 @@
-h1 {
-    color: red;
+/* Reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+/* header */
+/* Duy dán css vào chỗ này */
+/* End header */
+
+/* footer */
+.footer {
+    width: 100%;
+    background: #eaeaea;
+}
+
+.footer_cobct {
+    width: 100%;
+    background: #eaeaea;
+    padding: 30px 42px;
+    margin: auto -8px;
+}
+
+.footer_end{
+    background: #666565;
+    color: white;
+    margin: 0 auto;
+    font-size: 25px;
+    padding: 0 42px;
+}	
+.footer .item-footer {
+    width: 25%;
+    float: right;
+    padding: 0 8px;    
+}
+/* fix footer */
+.footer .link-footer, .content-footer {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-top: 14px;
+    font-size: 18px;
+    transition: all 0.2s;
+}
+
+.footer .icon-footer {
+    color: green;
+    margin-right: 4px;  
+}
+
+.footer .heading-footer {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.footer .social-footer {
+    display: inline-block;
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.footer .link-footer:hover {
+    color:rgb(37, 189, 37);
+}
+
+.img-validate-footer {
+    object-fit: cover;
+    width: 53%;
+    margin-top: 23px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* End footer */

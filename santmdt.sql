@@ -63,7 +63,7 @@ CREATE TABLE `bai_viet` (
   `ID_NBL` int(11) NOT NULL,
   `TIEUDE_BV` varchar(1024) DEFAULT NULL,
   `NOIDUNG_BV` text,
-  `NGAYDANG_BV` datetime DEFAULT NULL
+  `NGAYDANG_BV` datetime DEFAULT NOW()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -76,7 +76,7 @@ CREATE TABLE `baocao_bv` (
   `ID_BAOCAO_BV` int(11) NOT NULL,
   `ID_KH` int(11) NOT NULL,
   `ID_BV` int(11) NOT NULL,
-  `NGAYLAP_BAOCAO_BV` datetime DEFAULT NULL,
+  `NGAYLAP_BAOCAO_BV` datetime DEFAULT NOW(),
   `TRANGTHAI_BAOCAO_BV` varchar(1024) DEFAULT NULL,
   `NOIDUNG_BAOCAO_BV` varchar(1024) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -92,7 +92,7 @@ CREATE TABLE `baocao_sp` (
   `ID_KH` int(11) NOT NULL,
   `ID_SP` int(11) NOT NULL,
   `NOIDUNG_BAOCAO_SP` varchar(1024) DEFAULT NULL,
-  `NGAYLAP_BAOCAO_SP` datetime DEFAULT NULL,
+  `NGAYLAP_BAOCAO_SP` datetime DEFAULT NOW(),
   `TRANGTHAI_BAOCAO_SP` varchar(1024) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -107,7 +107,7 @@ CREATE TABLE `binhluan_bv` (
   `ID_BV` int(11) NOT NULL,
   `ID_KH` int(11) NOT NULL,
   `NOIDUNG_BINHLUAN_BV` varchar(1024) DEFAULT NULL,
-  `THOIGIAN_BINHLUAN_BV` datetime DEFAULT NULL
+  `THOIGIAN_BINHLUAN_BV` datetime DEFAULT NOW()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -121,7 +121,7 @@ CREATE TABLE `binhluan_sp` (
   `ID_KH` int(11) NOT NULL,
   `ID_SP` int(11) NOT NULL,
   `NOIDUNG_BINHLUAN_SP` varchar(1024) DEFAULT NULL,
-  `THOIGIAN_BINHLUAN_SP` datetime DEFAULT NULL
+  `THOIGIAN_BINHLUAN_SP` datetime DEFAULT NOW()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -183,7 +183,7 @@ CREATE TABLE `don_hang` (
   `ID_DH` int(11) NOT NULL,
   `ID_KH` int(11) NOT NULL,
   `TRANGTHAI_DH` int(11) DEFAULT NULL,
-  `THOIGIANLAP` datetime DEFAULT NULL
+  `THOIGIANLAP` datetime DEFAULT NOW()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -197,7 +197,7 @@ CREATE TABLE `gia` (
   `ID_SP` int(11) NOT NULL,
   `GIA` float DEFAULT NULL,
   `GIA_KM` float DEFAULT NULL,
-  `NGAYLAP_GIA` datetime DEFAULT NULL
+  `NGAYLAP_GIA` datetime DEFAULT NOW()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -285,7 +285,7 @@ CREATE TABLE `loai_sp` (
 CREATE TABLE `nhabanle_thamgia` (
   `ID_NBL` int(11) NOT NULL,
   `ID_KHUYENMAI` int(11) NOT NULL,
-  `NGAYTHAMGIA_KM` datetime DEFAULT NULL
+  `NGAYTHAMGIA_KM` datetime DEFAULT NOW()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -357,7 +357,7 @@ CREATE TABLE `san_pham` (
 CREATE TABLE `taikhoan` (
   `TEN_DANG_NHAP` varchar(50) NOT NULL,
   `MATKHAU` varchar(50) DEFAULT NULL,
-  `NGAYLAP_TK` datetime DEFAULT NULL
+  `NGAYLAP_TK` datetime DEFAULT NOW()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -381,6 +381,23 @@ CREATE TABLE `xa_phuong` (
   `QUAN_HUYEN` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+-- Cấu trúc bảng cho bảng `yeuthich`
+--
+
+CREATE TABLE `yeuthich` (
+  `ID_YEUTHICH` int(11) NOT NULL,
+  `ID_KH` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+-- Cấu trúc bảng cho bảng `yeuthich`
+--
+
+CREATE TABLE `chitietyeuthich` (
+  `ID_YEUTHICH` int(11) NOT NULL,
+  `ID_SP` int(11) NOT NULL,
+  `NGAY_THEM_SP_YT` datetime DEFAULT NOW()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 --
 -- Chỉ mục cho các bảng đã đổ
 --
@@ -579,6 +596,15 @@ ALTER TABLE `xa_phuong`
   ADD PRIMARY KEY (`XA_PHUONG`),
   ADD KEY `FK_XA_PHUON_THUOC_QUAN_HUY` (`QUAN_HUYEN`);
 
+ALTER TABLE `YEUTHICH`
+  ADD PRIMARY KEY (`ID_YEUTHICH`),
+  ADD KEY `FK_YEUTHICH_KHACHANG` (`ID_KH`);
+
+ALTER TABLE `chitietyeuthich`
+  ADD PRIMARY KEY (`ID_SP`,`ID_YEUTHICH`),
+  ADD KEY `FK_CHITIETYEUTHICH_SANPHAM` (`ID_YEUTHICH`);
+
+
 --
 -- AUTO_INCREMENT cho các bảng đã đổ
 --
@@ -703,6 +729,9 @@ ALTER TABLE `quangcao`
 ALTER TABLE `san_pham`
   MODIFY `ID_SP` int(11) NOT NULL AUTO_INCREMENT;
 
+
+ALTER TABLE `yeuthich`
+  MODIFY `ID_YEUTHICH` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- Các ràng buộc cho các bảng đã đổ
 --
@@ -830,6 +859,13 @@ ALTER TABLE `san_pham`
   ADD CONSTRAINT `FK_SAN_PHAM_BAN_SAN_P_NHA_BAN_` FOREIGN KEY (`ID_NBL`) REFERENCES `nha_ban_le` (`ID_NBL`),
   ADD CONSTRAINT `FK_SAN_PHAM_CO_DON_VI_DONVI` FOREIGN KEY (`ID_DONVI`) REFERENCES `donvi` (`ID_DONVI`),
   ADD CONSTRAINT `FK_SAN_PHAM_THUOC_LOA_LOAI_SP` FOREIGN KEY (`ID_LOAI`) REFERENCES `loai_sp` (`ID_LOAI`);
+
+ALTER TABLE `yeuthich`
+  ADD CONSTRAINT `FK_YEUTHICH_KHACHANG` FOREIGN KEY (`ID_KH`) REFERENCES `khach_hang` (`ID_KH`);
+
+ALTER TABLE `chitietyeuthich`
+  ADD CONSTRAINT `FK_CHITIETYEUTHICH_YEUTHICH` FOREIGN KEY (`ID_YEUTHICH`) REFERENCES `yeuthich` (`ID_YEUTHICH`),
+  ADD CONSTRAINT `FK_CHITIETYEUTHICH_SANPHAM` FOREIGN KEY (`ID_SP`) REFERENCES `san_pham` (`ID_SP`);
 
 --
 -- Các ràng buộc cho bảng `xa_phuong`
