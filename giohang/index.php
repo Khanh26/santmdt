@@ -50,8 +50,9 @@
                         <div class="item-cart">
                             <div class="choose-all-product item-cart-heading">
                                 <input type="checkbox" name="chooseAllProducts" id="chooseAllProducts">
+                                <img src="http://localhost/santmdt/assets/img/sanpham/voibot.jpg" alt="">
                                 <label for=""  class="heading-product">
-                                    <img src="http://localhost/santmdt/assets/img/maymocthietbi/dau-phun-ap-luc.jpg" alt="">
+                                    
 
                                     <h4 class="title-product">Đầu phun áp lực</h4>
                                 </label>
