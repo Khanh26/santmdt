@@ -29,7 +29,7 @@
             có tuổi thọ cao và nếu được chăm sóc chu đáo sẽ cho hoa nhiều và có màu sắc đẹp. 
             Cây mai mỗi năm rụng lá một lần vào cuối mùa Đông (tháng 1 – tháng 2 Dương lịch) 
             và nở hoa vào đầu mùa Xuân, chỉ riêng mai Tứ Quý là nở hoa quanh năm.
-            <a href="tintuc(hoamai).html">
+            <a href="http://localhost/santmdt/tintuc/html/hoamai.php">
                 <br>
                 Xem Thêm</a>
         </div>
@@ -45,7 +45,7 @@
             có tuổi thọ cao và nếu được chăm sóc chu đáo sẽ cho hoa nhiều và có màu sắc đẹp. 
             Cây mai mỗi năm rụng lá một lần vào cuối mùa Đông (tháng 1 – tháng 2 Dương lịch) 
             và nở hoa vào đầu mùa Xuân, chỉ riêng mai Tứ Quý là nở hoa quanh năm.
-            <a href="tintuc(xoai).html">
+            <a href="http://localhost/santmdt/tintuc/html/xoai.php">
                 <br>
                 Xem Thêm</a>
         </div>
@@ -61,7 +61,7 @@
             thì kỹ thuật trồng cũng quyết định không nhỏ đến sinh trưởng 
             và năng suất của vườn cà phê. 
             Hy vọng những thông tin sau sẽ bổ ích đối với bà con.
-            <a href="tintuc(CF).html">
+            <a href="http://localhost/santmdt/tintuc/html/cf.php">
                 <br>
             Xem Thêm</a>
         </div>
