@@ -16,70 +16,85 @@
     <div class="about">
         <p class="caption_about"><center><h2>GIỚI THIỆU QUY TRÌNH TRỒNG XOÀI, HƯỚNG DẪN CHĂM SÓC CÂY XOÀI</h2></center></p>
         <p>
-            Giới thiệu quy trình kỹ thuật trồng cà phê, hướng dẫn chăm sóc cây cà phê cho năng suất cao và ổn định. 
-            Ngoài việc lựa chọn giống cà phê đạt tiêu chuẩn, có xuất xứ rõ ràng, 
-            thì kỹ thuật trồng cũng quyết định không nhỏ đến sinh trưởng và năng suất của vườn cà phê. 
-            Hy vọng những thông tin sau sẽ bổ ích đối với bà con.
+        Mai có xuất xứ từ cây hoang dại, có khả năng thích ứng tốt với điều kiện khí hậu nhiệt đới, 
+        đặc biệt với khí hậu miền Nam. Cây mai sinh trưởng và phát triển mạnh, 
+        có tuổi thọ cao và nếu được chăm sóc chu đáo sẽ cho hoa nhiều và có màu sắc đẹp. 
+        Cây mai mỗi năm rụng lá một lần vào cuối mùa Đông (tháng 1 – tháng 2 Dương lịch) và nở hoa vào đầu mùa Xuân, 
+        chỉ riêng mai Tứ Qúy là nở hoa quanh năm.<br><br>
+        Hiện nay nhờ kỹ thuật lai tạo giống, các nghệ nhân đã tạo ra được các giống mai có nhiều cánh, 
+        cánh xếp nhiều tầng như mai Huỳnh Tỷ, mai Giảo, mai Cúc, mai Cửu Long…
+        và đa dạng về màu sắc như Bạch Mai, mai Miến Điện, mai Bến Tre, mai Tứ Quý…<br><br>
+        Kỹ thuật trồng và chăm sóc mai không phức tạp. 
+        Tuy nhiên để có một cây mai theo ý muốn của nguời chơi, 
+        ngoài những kỹ thuật thường áp dụng như tỉa cành tạo tán, tưới nước, phòng trừ sâu bệnh việc trồng 
+        và chăm sóc mai cần chú ý một số điểm sau:
 
         </p>
         <p class="img"><img src="http://localhost/santmdt/assets/img/hoa-mai-vang.jpg" alt=""></p>
         <p>
-            <h3>Cây cà phê yêu cầu khí hậu và đất trồng như thế nào?</h3>
-            <li><b>Đối với cà phê mít, cà phê vối:</b> khí hậu phù hợp là khí hậu nóng ẩm, mưa nhiều (2000mm/năm trở lên).
-                <br>
-                &ensp;&emsp; Nhiệt độ từ 24-26 độ C
+            <h3>1. Chọn đất trồng mai:</h3>
+            <li><b>Đất trồng mai trên vườn, líp:</b> Cây mai phát triển tốt trên đất thịt nhẹ có nhiều chất hữu cơ, đất không chua, không bị nhiễm phèn, mặn hoặc các hoá chất độc hại.
+            <br>
+            <br>
+            <li><b>Đất trồng mai trong chậu:</b> cần chọn loại đất có các tính chất như trên, trộn theo tỷ lệ khoảng 70-80% đất và 20-30% phân hữu cơ hoai mục theo trọng lượng đất trong chậu.
+            </li>
             </li>
             <br>
 
-            <li><b>Đối với cà phê chè:</b> Thích hợp với khí hậu lạnh hơn từ 16-22 độ C, lượng mưa từ 1700 – 2000mm.
-                <br>
-                &ensp;&emsp; Ở Việt Nam vùng Lâm Đồng trồng cà phê chè là phù hợp nhất.
+            <h3>2. Kỹ thuật bón phân</h3>
+            <h4>2.1 Mai trồng trên vườn, líp:</h4>
+            <li><b>Bón lót khi trồng:</b> Phân chuồng (phân trâu bò, tro trấu, sơ dừa…) đã qua ủ khoảng 5-10 kg/gốc, 
+                vôi bột khoảng 200-300 gr/gốc + 50-100gr lân Đầu Trâu. 
+                Toàn bộ lượng phân này được trộn đều trong hố (hoặc rãnh) trước khi trồng cây con.
             </li>
             <br>
 
-            <li><b>Cả 3 giống cà chè, cà vối và cà mít:</b> đều yêu cầu có sự phân chia 2 mùa mưa nắng rõ rệt, tạo điều kiện ức chế mầm hoa, 
-                <br>
-                &ensp;&emsp; giúp cây ra hoa đậu quả tập trung hơn
+            <li><b>Bón thúc:</b> Sau khi trồng khoảng 10-15 ngày, cây bắt đầu ra rễ mới, 
+            dùng phân NPK 20-20-15+TE Đầu Trâu hoà loãng để tưới, 
+            lượng phân sử dụng từ 50-100 gr/10-15 lít nước, khoảng 20-30 ngày tưới 1 lần. 
+            Khi mai đã lớn, lượng phân bón cũng được tăng dần và khoảng cách các lần bón phân xa hơn. 
+            Loại phân bón qua đất thích hợp cho mai là NPK 20-20-15+TE hoặc NPK 16-12-8-11+TE. 
+            Lượng bón khoảng 20 -50 gr/gốc/lần bón, cách khoảng 1-2 tháng bón 1 lần.
+            <br><br>
+            
+            Khi mai đã cho hoa ổn định: Hàng năm cần bón bổ sung phân hữu cơ từ 5-10 kg/gốc. 
+            Sử dụng loại phân NPK 20-20-15+TE hoặc NPK 16-12-8-11+TE bón mỗi năm khoảng 3-4 lần 
+            với lượng bón như trên vào các đợt: sau khi tàn hoa (sau dịp Tết), 
+            cắt tỉa cành; đầu mùa mưa; giữa mùa mưa và trước khi mai nở hoa khoảng 1-1,5 tháng. 
+            Cần bón phân theo hốc, theo rãnh sâu từ 5-7 cm theo tàn lá của cây, 
+            bón vào vùng có nhiều rễ non phát triển, sau đó lấp đất, giữ ẩm vào mùa khô, 
+            thoáng gốc vào mùa mưa.
+            </li>
+            <br>
+
+            <h4>2.2 Mai trồng trong chậu</h4>
+            <li>
+                    Tùy theo kích thước chậu, lượng bón có thể thay đổi từ 20-50 gr/chậu cho 1 lần bón. 
+                    Với chậu lớn, cây mai nhiều tuổi có thể bón khoảng 50-80 gr/chậu. 
+                    Tạo rãnh xung quanh thành chậu, sâu khoảng 3-5 cm, rải phân đều vào rãnh, 
+                    lấp đất và tưới đủ ẩm. Tránh làm đứt rễ, cây dễ bị nhiễm bệnh qua vết thương. 
+                    Nếu có điều kiện, hàng năm vào đầu mùa mưa nên thay đất trong chậu bằng đất mới tơi xốp, 
+                    hoặc bổ sung phân hữu cơ đã hoai mục, lượng bón từ 2-3 kg/chậu.
             </li>
             <br>
 
             <li>
-                <b>Yêu cầu về đất trồng:</b> Đất trồng cà phê phải là loại đất giàu dinh dưỡng, thoát nước tốt, tầng canh tác sâu 0,8 – 1m. 
-                <br>&ensp;&emsp;Các loại đất xám, đất thịt pha, đất đỏ bazan đều có thể trồng cà phê, nhưng nhìn chung đất đỏ bazan là phù hợp nhất. 
-                <br>&ensp;&emsp;Cho năng suất cao, cây sinh trưởng mạnh
+                <b>Sử dụng phân bón lá:</b> Ngoài việc sử dụng phân bón qua đất, 
+                    phân bón lá có vai trò quan trọng trong việc thúc đẩy sinh trưởng và phát triển, 
+                    bổ sung các chất dinh dưỡng thiếu hụt trong đất, kích thích ra rễ, ra lá, 
+                    ra hoa theo ý muốn của người chơi mai.
+
             </li>
             <br>
 
             <li>
-                <b>Đất cải tạo cà phê lâu năm:</b> Cần được cày xới, bổ sung phân hữu cơ (phân chuồng hoai mục, phân xanh). 
-                <br>&ensp;&emsp;Và canh tác ít nhất 2 vụ màu để giảm thiểu tuyến trùng, mầm bệnh
+                <b>Một số loại phân bón lá được nhà vườn quan tâm đó là:</b> 
+                Phân bón lá Đầu Trâu 501 thúc ra chồi ra lá, Đầu Trâu 701 thúc ra bông 
+                và Đầu Trâu 901 có tác dụng dưỡng bông giúp bông lâu tàn và có màu sắc đẹp. 
+                Tương tự nhóm sản phẩm phân bón lá Đầu Trâu 005, Đầu Trâu 007, 
+                Đầu Trâu 009 cũng có hiệu quả cao đối với tất cả các loại mai cảnh.
             </li>
             <br>
-
-            <li>
-                <b>Yêu cầu về gió và ánh sáng mặt trời:</b> Cây ưa thích môi trường kín gió, ánh sáng tán xạ. 
-                <br>&ensp;&emsp;Ánh sáng trực tiếp cây vẫn phát triển nhưng thường chống chọi với mùa khô hạn kém hơn. 
-                <br>&ensp;&emsp;Do đó yêu cầu khi canh tác cây cà phê, nhất định phải trồng hệ thống cây che bóng, cây chắn gió xung quanh 
-                <br>&ensp;&emsp;hoặc chắn gió giữa các hàng trong giai đoạn kiến thiết
-            </li>
-            <br>
-
-            <h3>Mật độ trồng cà phê</h3>
-            <li>
-                <b>Cà phê vối:</b> Mật độ trồng phổ biến là 3m x 3m hoặc 2,8 x 2,8m đối với đất bằng phẳng (tương đương 1100 cây/hecta). 
-                <br>&ensp;&emsp;Đất dốc nhiều trồng 3m x 2,5m (tương đương 1300 cây/hecta). 
-                <br>&ensp;&emsp;Ngoài ra tùy theo đặc điểm của giống cà phê, mật độ trồng cũng có thể khác nhau.
-            </li>
-            <br>
-
-            <li>
-                Cà phê mít mật độ trồng là 5×5 hoặc 7×7 m (khoảng 700 cây/hecta)
-            </li>
-            <br>
-
-            <li>
-                Cà phê chè mật độ trồng dày nhất 1m x 2m (khoảng 4000 cây/hecta)
-            </li>
 
         </p>
 
