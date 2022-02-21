@@ -1,11 +1,35 @@
-.about {
-    width: 960px;
-    margin: 0 auto;
-    height: auto;
-}
-p.caption_about {
-    font-size: 20px;
-}
-p.img {
-    text-align: center;
-}
+
+.tintuc {
+    width: 100%;
+    display: flex;
+  }
+  
+.tintuc_1 {
+    border: 0px solid black;
+    margin: 15px 15px;
+    background-color: rgb(239, 242, 243);
+    padding : 10px;
+    width: 800px;
+    height: 220px;
+    text-align: justify;
+  }
+  
+  p.img {
+      text-align: center;
+  }
+  
+  .fill {object-fit: fill;}
+  .contain {object-fit: contain;}
+  .cover {object-fit: cover;}
+  .scale-down {object-fit: scale-down;}
+  .none {object-fit: none;}
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .img1 {
+    float: left;
+  }

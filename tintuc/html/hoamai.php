@@ -1,3 +1,5 @@
+<html>
+ <head>
      <style>
          .about {
             width: 960px;
@@ -12,14 +14,15 @@
         }
     </style>
     <div class="about">
-        <p class="caption_about"><center><h2>QUY TRÌNH TRỒNG VÀ CHẮM SÓC CÂY CÀ PHÊ ĐÚNG KỸ THUẬT</h2></center></p>
+        <p class="caption_about"><center><h2>GIỚI THIỆU QUY TRÌNH TRỒNG XOÀI, HƯỚNG DẪN CHĂM SÓC CÂY XOÀI</h2></center></p>
         <p>
             Giới thiệu quy trình kỹ thuật trồng cà phê, hướng dẫn chăm sóc cây cà phê cho năng suất cao và ổn định. 
             Ngoài việc lựa chọn giống cà phê đạt tiêu chuẩn, có xuất xứ rõ ràng, 
             thì kỹ thuật trồng cũng quyết định không nhỏ đến sinh trưởng và năng suất của vườn cà phê. 
             Hy vọng những thông tin sau sẽ bổ ích đối với bà con.
+
         </p>
-        <p class="img"><img src="images/ky_thuat_trong_ca_phe.jpg" alt=""></p>
+        <p class="img"><img src="http://localhost/santmdt/assets/img/hoa-mai-vang.jpg" alt=""></p>
         <p>
             <h3>Cây cà phê yêu cầu khí hậu và đất trồng như thế nào?</h3>
             <li><b>Đối với cà phê mít, cà phê vối:</b> khí hậu phù hợp là khí hậu nóng ẩm, mưa nhiều (2000mm/năm trở lên).
@@ -81,3 +84,6 @@
         </p>
 
     </div>
+        
+ </head>   
+</html>
