@@ -1,0 +1,11 @@
+.about {
+    width: 960px;
+    margin: 0 auto;
+    height: auto;
+}
+p.caption_about {
+    font-size: 20px;
+}
+p.img {
+    text-align: center;
+}
