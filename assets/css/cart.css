@@ -1,0 +1,62 @@
+.content .main-content {
+    padding-top: 31px;
+}
+
+.content .header-cart {
+    margin-bottom: 16px;
+}
+
+.content .header-cart .heading-content{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Noto Serif', serif;
+}
+
+.content .heading-body-cart, .item-cart {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+}
+
+.content .choose-all-product {
+    width: 40%;
+}
+
+.content .price-one,.number {
+    width: 20%;
+}
+
+.content .price, .btnDelete-block {
+    width: 10%;
+}
+
+.content .btnDelete-block {
+    text-align: end;
+}
+
+.content .item-cart-heading {
+    padding: 10px;
+}
+
+.content #chooseAllProducts {
+    margin-right: 6px;
+}
+
+.content .btnDelete {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.content .content-body-cart {
+    margin-top: 16px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}

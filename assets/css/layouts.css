@@ -243,3 +243,22 @@ a {
 }
 
 /* End footer */
+
+/* breadcrumb */
+.content {
+    padding: 0 7% 100px 7%;
+    background-color: #efefef;
+}
+
+.content .breadcrumb-main{
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.content .item-breadcrumb {
+    padding: 0 4px;
+    font-size: 18px;
+}
+
+/* End breadcrumb */
