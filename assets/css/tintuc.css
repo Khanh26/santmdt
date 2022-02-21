@@ -1,23 +1,12 @@
-
-.tintuc {
-    width: 100%;
-    display: flex;
-  }
-  
-.tintuc_1 {
-    border: 0px solid black;
-    margin: 15px 15px;
-    background-color: rgb(239, 242, 243);
-    padding : 10px;
+ .tintuc_1 {
+    border: 15px solid black;
+    margin: 20px;
+    background-color: rgb(212, 73, 26);
+    padding : 50px;
     width: 800px;
     height: 220px;
-    text-align: justify;
   }
-  
-  p.img {
-      text-align: center;
-  }
-  
+
   .fill {object-fit: fill;}
   .contain {object-fit: contain;}
   .cover {object-fit: cover;}
@@ -32,4 +21,8 @@
   
   .img1 {
     float: left;
+    margin-left: 50px;
   }
+h2 {
+  margin-left: 50px;
+}
