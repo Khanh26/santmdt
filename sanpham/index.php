@@ -16,7 +16,24 @@
         <!-- End header -->
 
         <!-- Content -->
-            <!-- Code trang chu o day -->
+        <div class="sidebar_left">
+            <div class="sidebar_tittle">
+                Ten dang nhap
+            </div>
+            <ul class="sidebar_menu">
+                <li>
+                    <a href="#">Tài khoản của tôi</a>
+                    <ul class="menu_sub">
+                        <li><a href="#">Hồ sơ</a></li>
+                        <li><a href="#">Ngân hàng</a></li>
+                        <li><a href="#">Đổi mật khẩu</a></li>
+                        <li><a href="#">Địa chỉ</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div> 
+
         <!-- End content -->
 
         <!-- footer -->
