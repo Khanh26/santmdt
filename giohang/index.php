@@ -69,7 +69,7 @@
                             <div class="price item-cart-heading">199.000</div>
                             <div class="btnDelete-block item-cart-heading"><button class="btnDelete"><i class="far fa-trash-alt"></i></button></div>
                         </div>
-
+                        <hr>
                         <div class="item-cart">
                             <div class="choose-all-product item-cart-heading">
                                 <input type="checkbox" name="chooseAllProducts" class="chooseOneProduct">
