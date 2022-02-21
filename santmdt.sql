@@ -207,7 +207,8 @@ CREATE TABLE `gia` (
 --
 
 CREATE TABLE `giohang` (
-  `ID_GIOHANG` int(11) NOT NULL
+  `ID_GIOHANG` int(11) NOT NULL,
+  `ID_KH` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -218,7 +219,6 @@ CREATE TABLE `giohang` (
 
 CREATE TABLE `khach_hang` (
   `ID_KH` int(11) NOT NULL,
-  `ID_GIOHANG` int(11) NOT NULL,
   `XA_PHUONG` varchar(50) NOT NULL,
   `TEN_DANG_NHAP` varchar(50) NOT NULL,
   `HOTEN_KH` varchar(30) DEFAULT NULL,
@@ -503,7 +503,9 @@ ALTER TABLE `gia`
 -- Chỉ mục cho bảng `giohang`
 --
 ALTER TABLE `giohang`
-  ADD PRIMARY KEY (`ID_GIOHANG`);
+  ADD PRIMARY KEY (`ID_GIOHANG`),
+  ADD KEY `FK_KHACH_HA_CO_GIO_HA_GIOHANG` (`ID_KH`);
+
 
 --
 -- Chỉ mục cho bảng `khach_hang`
@@ -511,7 +513,6 @@ ALTER TABLE `giohang`
 ALTER TABLE `khach_hang`
   ADD PRIMARY KEY (`ID_KH`),
   ADD KEY `FK_KHACH_HA_CO_DIA_CH_XA_PHUON` (`XA_PHUONG`),
-  ADD KEY `FK_KHACH_HA_CO_GIO_HA_GIOHANG` (`ID_GIOHANG`),
   ADD KEY `FK_KHACH_HA_CO_TAI_KH_TAIKHOAN` (`TEN_DANG_NHAP`);
 
 --
@@ -822,8 +823,11 @@ ALTER TABLE `gia`
 --
 ALTER TABLE `khach_hang`
   ADD CONSTRAINT `FK_KHACH_HA_CO_DIA_CH_XA_PHUON` FOREIGN KEY (`XA_PHUONG`) REFERENCES `xa_phuong` (`XA_PHUONG`),
-  ADD CONSTRAINT `FK_KHACH_HA_CO_GIO_HA_GIOHANG` FOREIGN KEY (`ID_GIOHANG`) REFERENCES `giohang` (`ID_GIOHANG`),
   ADD CONSTRAINT `FK_KHACH_HA_CO_TAI_KH_TAIKHOAN` FOREIGN KEY (`TEN_DANG_NHAP`) REFERENCES `taikhoan` (`TEN_DANG_NHAP`);
+
+
+ALTER TABLE `giohang`
+  ADD CONSTRAINT `FK_KHACH_HANG_CO_GIO_HANG` FOREIGN KEY (`ID_KH`) REFERENCES `khach_hang` (`ID_KH`);
 
 --
 -- Các ràng buộc cho bảng `nhabanle_thamgia`
