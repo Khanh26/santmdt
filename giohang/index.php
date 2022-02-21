@@ -49,21 +49,52 @@
                     <div class="content-body-cart">
                         <div class="item-cart">
                             <div class="choose-all-product item-cart-heading">
-                                <input type="checkbox" name="chooseAllProducts" id="chooseAllProducts">
-                                <label for=""  class="heading-product">                                    
+                                <input type="checkbox" name="chooseAllProducts" class="chooseOneProduct">
+                                <label for="" class="heading-product">
                                     <img src="http://localhost/santmdt/assets/img/sanpham/voibot.jpg" class="img-product" alt="">
-                                    <h4 class="title-product">Đầu phun áp lực</h4>
+                                    <div class="information-product">
+                                        <a href="" class="title-product">Vôi Bột hàng chất lượng</a>
+                                        <a href="" class="shop-product">Cửa hàng: Shop Alone</a>
+                                    </div>
                                 </label>
                             </div>
-                            <div class="price-one item-cart-heading">199.000đ</div>
+                            <div class="price-one item-cart-heading">199.000</div>
                             <div class="number item-cart-heading">
-                                <button class="btn-number-product">-</button>
-                                <input type="text" name="" value="1" class="number-product">
-                                <button class="btn-number-product">+</button>
+                                <div class="block-number">
+                                    <button class="btn-number-product btnDownProduct">-</button>
+                                    <input type="text" name="" value="1" class="number-product">
+                                    <button class="btn-number-product btnUpProduct">+</button>
+                                </div>
                             </div>
-                            <div class="price item-cart-heading">asd</div>
-                            <div class="btnDelete-block item-cart-heading">asd</div>
+                            <div class="price item-cart-heading">199.000</div>
+                            <div class="btnDelete-block item-cart-heading"><button class="btnDelete"><i class="far fa-trash-alt"></i></button></div>
                         </div>
+
+                        <div class="item-cart">
+                            <div class="choose-all-product item-cart-heading">
+                                <input type="checkbox" name="chooseAllProducts" class="chooseOneProduct">
+                                <label for="" class="heading-product">
+                                    <img src="http://localhost/santmdt/assets/img/sanpham/may-cat-co-mishubishi-do.jpeg" class="img-product" alt="">
+                                    <div class="information-product">
+                                        <a href="" class="title-product">Máy cắt cỏ Mishubishi</a>
+                                        <a href="" class="shop-product">Cửa hàng: Shop Alone</a>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="price-one item-cart-heading">199.000</div>
+                            <div class="number item-cart-heading">
+                                <div class="block-number">
+                                    <button class="btn-number-product btnDownProduct">-</button>
+                                    <input type="text" name="" value="1" class="number-product">
+                                    <button class="btn-number-product btnUpProduct">+</button>
+                                </div>
+                            </div>
+                            <div class="price item-cart-heading">199.000</div>
+                            <div class="btnDelete-block item-cart-heading"><button class="btnDelete"><i class="far fa-trash-alt"></i></button></div>
+                        </div>
+                    </div>
+                    <div class="btnCheckout-block">
+                        <a href="" class="link-cart-checkout">MUA HÀNG</a>
                     </div>
                 </div>
             </div>
@@ -74,7 +105,7 @@
         <?php include('../view/layout/client/footer.php'); ?>
         <!-- End footer -->
     </div>
-
+    <script src="http://localhost/santmdt/assets/js/cart.js"></script>
 </body>
 
 </html>
