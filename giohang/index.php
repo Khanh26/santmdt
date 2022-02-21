@@ -50,15 +50,17 @@
                         <div class="item-cart">
                             <div class="choose-all-product item-cart-heading">
                                 <input type="checkbox" name="chooseAllProducts" id="chooseAllProducts">
-                                <img src="http://localhost/santmdt/assets/img/sanpham/voibot.jpg" alt="">
-                                <label for=""  class="heading-product">
-                                    
-
+                                <label for=""  class="heading-product">                                    
+                                    <img src="http://localhost/santmdt/assets/img/sanpham/voibot.jpg" class="img-product" alt="">
                                     <h4 class="title-product">Đầu phun áp lực</h4>
                                 </label>
                             </div>
-                            <div class="price-one item-cart-heading">asd</div>
-                            <div class="number item-cart-heading">asd</div>
+                            <div class="price-one item-cart-heading">199.000đ</div>
+                            <div class="number item-cart-heading">
+                                <button class="btn-number-product">-</button>
+                                <input type="text" name="" value="1" class="number-product">
+                                <button class="btn-number-product">+</button>
+                            </div>
                             <div class="price item-cart-heading">asd</div>
                             <div class="btnDelete-block item-cart-heading">asd</div>
                         </div>

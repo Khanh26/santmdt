@@ -60,3 +60,29 @@
     border: none;
     border-radius: 5px;
 }
+
+.content .heading-product {
+    display: flex;
+    align-items: center;
+}
+
+.content .img-product {
+    width: 20%;
+    object-fit: cover;
+    margin: 0 6px;
+}
+
+.item-cart > .choose-all-product {
+    display: flex;
+    align-items: center;
+}
+
+.content .number-product {
+    width: 42px;
+    height: 16px;
+    text-align: center;
+}
+
+.content .btn-number-product {
+    
+}

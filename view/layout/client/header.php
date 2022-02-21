@@ -40,7 +40,7 @@
             <i class="fas fa-user icon-header"></i>
             <div id="a2">
                 <a href="" class="link-header">Đăng nhập</a><b>/</b>
-                <a href="" class="link-header">Đăng ký</a>
+                <a href="http://localhost/santmdt/dangky" class="link-header">Đăng ký</a>
             </div>
         </div>
     </div>
