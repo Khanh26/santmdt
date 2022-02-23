@@ -19,9 +19,9 @@
             thì kỹ thuật trồng cũng quyết định không nhỏ đến sinh trưởng và năng suất của vườn cà phê. 
             Hy vọng những thông tin sau sẽ bổ ích đối với bà con.
         </p>
-        <p class="img"><img src="images/ky_thuat_trong_ca_phe.jpg" alt=""></p>
+        <p class="img"><img src="http://localhost/santmdt/assets/img/ky_thuat_trong_ca_phe.jpg" alt=""></p>
         <p>
-            <h3>Cây cà phê yêu cầu khí hậu và đất trồng như thế nào?</h3>
+            <h3>1. Cây cà phê yêu cầu khí hậu và đất trồng như thế nào?</h3>
             <li><b>Đối với cà phê mít, cà phê vối:</b> khí hậu phù hợp là khí hậu nóng ẩm, mưa nhiều (2000mm/năm trở lên).
                 <br>
                 &ensp;&emsp; Nhiệt độ từ 24-26 độ C
@@ -61,7 +61,7 @@
             </li>
             <br>
 
-            <h3>Mật độ trồng cà phê</h3>
+            <h3>2. Mật độ trồng cà phê</h3>
             <li>
                 <b>Cà phê vối:</b> Mật độ trồng phổ biến là 3m x 3m hoặc 2,8 x 2,8m đối với đất bằng phẳng (tương đương 1100 cây/hecta). 
                 <br>&ensp;&emsp;Đất dốc nhiều trồng 3m x 2,5m (tương đương 1300 cây/hecta). 

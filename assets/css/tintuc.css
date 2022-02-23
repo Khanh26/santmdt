@@ -1,11 +1,28 @@
-.about {
-    width: 960px;
-    margin: 0 auto;
-    height: auto;
-}
-p.caption_about {
-    font-size: 20px;
-}
-p.img {
-    text-align: center;
+ .tintuc_1 {
+    border: 15px solid black;
+    margin: 20px;
+    background-color: rgb(212, 73, 26);
+    padding : 50px;
+    width: 800px;
+    height: 220px;
+  }
+
+  .fill {object-fit: fill;}
+  .contain {object-fit: contain;}
+  .cover {object-fit: cover;}
+  .scale-down {object-fit: scale-down;}
+  .none {object-fit: none;}
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .img1 {
+    float: left;
+    margin-left: 50px;
+  }
+h2 {
+  margin-left: 50px;
 }
