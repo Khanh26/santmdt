@@ -10,7 +10,6 @@ btnDowns.forEach(btnDown => {
 });
 
 const checkOne = document.querySelectorAll(".chooseOneProduct");
-console.log(checkOne);
 // check all
 checkAll.addEventListener('change', () => {
     if (checkAll.checked) {

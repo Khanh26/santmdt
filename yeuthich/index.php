@@ -123,7 +123,7 @@
         <?php include('../view/layout/client/footer.php'); ?>
         <!-- End footer -->
     </div>
-
+    <script src="http://localhost/santmdt/assets/js/favorite.js"></script>
 </body>
 
 </html>
