@@ -21,20 +21,26 @@
         <!-- Content -->
 
         <div class="content">
-            <!-- <div class="breadcrumb">
+            <div class="breadcrumb">
                 <ul class="breadcrumb-main">
                     <li class="item-breadcrumb"><a href="">Trang chủ</a></li>
                     <li class="item-breadcrumb"><i class="fas fa-angle-double-right"></i></li>
                     <li class="item-breadcrumb">Giỏ hàng</li>
                 </ul>
             </div>
-            <hr> -->
+            <hr>
 
             <div class="main-content">
                 <div class="header-cart">
                     <h4 class="heading-cart heading-content">giỏ hàng</h4>
                 </div>
                 <div class="body-cart">
+                    <div class="search-favorite">
+                        <form action="" class="form-search-favorite">
+                            <input type="text" name="inputSearchFavorite" id="inputSearchFavorite" class="input-Search-products" placeholder="Tìm kiếm sản phẩm yêu thích...">
+                            <button type="submit" class="btn-search-products">Tìm sản phẩm</button>
+                        </form>
+                    </div>
                     <div class="heading-body-cart">
                         <div class="choose-all-product item-cart-heading">
                             <input type="checkbox" name="chooseAllProducts" id="chooseAllProducts">
@@ -44,7 +50,7 @@
                         <div class="number item-cart-heading">Số lượng</div>
                         <div class="price item-cart-heading">Thành tiền</div>
                         <div class="btnDelete-block item-cart-heading">
-                            <button class="btnDelete"><i class="far fa-trash-alt"></i></button>
+                            <button class="btnDelete" title="Xóa tất cả"><i class="far fa-trash-alt"></i></button>
                         </div>
                     </div>
                     <div class="content-body-cart">
@@ -68,7 +74,7 @@
                                 </div>
                             </div>
                             <div class="price item-cart-heading">199.000</div>
-                            <div class="btnDelete-block item-cart-heading"><button class="btnDelete"><i class="far fa-trash-alt"></i></button></div>
+                            <div class="btnDelete-block item-cart-heading"><button class="btnDelete" title="Xóa"><i class="far fa-trash-alt"></i></button></div>
                         </div>
                         <hr>
                         <div class="item-cart">

@@ -33,7 +33,7 @@
 
             </div>
             <div id="wishlist">
-                <a href="" class="link-header"><i class="fas fa-heart icon-cart icon-header"><span class="count-cart">0</span></i>Yêu thích</a>
+                <a href="http://localhost/santmdt/yeuthich" class="link-header"><i class="fas fa-heart icon-cart icon-header"><span class="count-cart">2</span></i>Yêu thích</a>
             </div>
         </div>
         <div id="he4-2">

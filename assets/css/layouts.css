@@ -259,6 +259,7 @@ a {
 .content .item-breadcrumb {
     padding: 0 4px;
     font-size: 18px;
+    display: flex;
 }
 
 /* End breadcrumb */
