@@ -19,12 +19,13 @@
       <h1>Tạo tài khoản đăng ký</h1>
       <div class="main-agileinfo">
         <div class="agileits-top">
-          <form action="#" method="post">
-            <input class="text" type="text" name="" placeholder="Tên đăng nhập" required="">
-            <input class="text email" type="email" name="" placeholder="Email" required="">
+          <form action="modules\api\dangky.php" method="POST">
+            <input class="text" type="text" name="username" placeholder="Tên đăng nhập" required="">
+            <input class="text inputName" type="text" name="fullname" placeholder="Họ tên" required="">
+            <input class="text email" type="email" name="email" placeholder="Email" required="">
             <input class="text inputPhone"  type="text" name="phone" placeholder="Số điện thoại" required="">
-            <input class="text" type="password" name="" placeholder="Mật khẩu" required="">
-            <input class="text w3lpass" type="password" name="" placeholder="Nhập lại mật khẩu" required="">
+            <input class="text" type="password" name="pass" placeholder="Mật khẩu" required="">
+            <input class="text w3lpass" type="password" name="repass" placeholder="Nhập lại mật khẩu" required="">
             <div class="wthree-text">
               <label class="anim">
                 <input type="checkbox" class="checkbox" required="">
