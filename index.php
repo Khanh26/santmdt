@@ -236,7 +236,24 @@
             </div>
             
             <div id="content5">
-                cac bai viet duoc doc nhieu
+                <div class="con5-1">
+                    <h1>cac bai viet duoc doc nhieu</h1>
+                </div>
+                <div class="con5-2">
+                    
+                    
+                    <article class="con5-2-1" >
+                        <a class="thea" href=""><h2>day la bai viet cua ban THINH</h2></a>
+                        <img class="theimg" src="http://localhost/santmdt/assets/img/hoa-mai-vang.jpg" alt="">
+                        <p class="thep">Mai có xuất xứ từ cây hoang dại, có khả năng thích ứng tốt với điều kiện khí hậu nhiệt đới, 
+        đặc biệt với khí hậu miền Nam. Cây mai sinh trưởng và phát triển mạnh, 
+        có tuổi thọ cao và nếu được chăm sóc chu đáo sẽ cho hoa nhiều và có màu sắc đẹp.</p>
+                    </article>
+                    <article class="con5-2-1"></article>
+                    <article class="con5-2-1"></article>
+                </div>
+                
+                
             </div>
         </div>  
         <!-- End content -->
