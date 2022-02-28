@@ -29,11 +29,11 @@
     <div id="he4">
         <div id="he4-1">
             <div id="cart">
-                <a href="http://localhost/santmdt/giohang" class="link-header"><i class="fas fa-shopping-cart icon-cart icon-header"><span class="count-cart">0</span></i>Giỏ hàng</a>
+                <a href="http://localhost/santmdt/giohang" class="link-header"><i class="fas fa-shopping-cart icon-cart icon-header"><span class="count-cart">2</span></i>Giỏ hàng</a>
 
             </div>
             <div id="wishlist">
-                <a href="" class="link-header"><i class="fas fa-heart icon-cart icon-header"><span class="count-cart">0</span></i>Yêu thích</a>
+                <a href="http://localhost/santmdt/yeuthich" class="link-header"><i class="fas fa-heart icon-cart icon-header"><span class="count-cart">2</span></i>Yêu thích</a>
             </div>
         </div>
         <div id="he4-2">
