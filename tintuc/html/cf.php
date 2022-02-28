@@ -11,8 +11,22 @@
             text-align: center;
         }
     </style>
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="http://localhost/santmdt/assets/img/logo1.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://localhost/santmdt/assets/css/layouts.css">
+    <link rel="stylesheet" href="http://localhost/santmdt/assets/css/tintuc.css">
+    <title>Trang chủ - Sàn Thương mại số 1 Việt Nam</title>
+</head>
+<div class="wapper">
+        <!-- header -->
+        <?php include('../../view/layout/client/header.php'); ?>
+        <!-- End header -->
     <div class="about">
+        <br>
         <p class="caption_about"><center><h2>QUY TRÌNH TRỒNG VÀ CHẮM SÓC CÂY CÀ PHÊ ĐÚNG KỸ THUẬT</h2></center></p>
         <p>
             Giới thiệu quy trình kỹ thuật trồng cà phê, hướng dẫn chăm sóc cây cà phê cho năng suất cao và ổn định. 
@@ -20,7 +34,9 @@
             thì kỹ thuật trồng cũng quyết định không nhỏ đến sinh trưởng và năng suất của vườn cà phê. 
             Hy vọng những thông tin sau sẽ bổ ích đối với bà con.
         </p>
+        <br>
         <p class="img"><img src="http://localhost/santmdt/assets/img/ky_thuat_trong_ca_phe.jpg" alt=""></p>
+        <br>
         <p>
             <h3>1. Cây cà phê yêu cầu khí hậu và đất trồng như thế nào?</h3>
             <li><b>Đối với cà phê mít, cà phê vối:</b> khí hậu phù hợp là khí hậu nóng ẩm, mưa nhiều (2000mm/năm trở lên).
@@ -78,7 +94,11 @@
             <li>
                 Cà phê chè mật độ trồng dày nhất 1m x 2m (khoảng 4000 cây/hecta)
             </li>
-
+            <br>
         </p>
 
     </div>
+        <!-- footer -->
+        <?php include('../../view/layout/client/footer.php'); ?>
+        <!-- End footer -->
+</div>
