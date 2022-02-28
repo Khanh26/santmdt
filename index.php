@@ -77,13 +77,16 @@
                 </div>
                 <div id="cnt0-2">
                     <div id="cnt02a">
-                        <!-- <img style="width: 100%; height: 100%; border-radius: 5px;"  src="https://cf.shopee.vn/file/47b26a12d96788aebb0d9c5e6ecaa7c8"> -->
+                        <img style="width: 100%; height: 100%; border-radius: 5px;"  src="https://cf.shopee.vn/file/47b26a12d96788aebb0d9c5e6ecaa7c8">
                     </div>
                     <div id="cnt02b">
-                        <!-- <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://magiamgiashopee.com/wp-content/uploads/2019/05/sieu-giam-gia-shopee.jpg" > -->
+                        <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://magiamgiashopee.com/wp-content/uploads/2019/05/sieu-giam-gia-shopee.jpg" >
                     </div>
                 </div>
             </div>
+            <!-- <div id="content4">
+                danh cho ban
+            </div> -->
             <div id="content1">
                 <div id="category">
                    <b>DANH MỤC SẢN PHẨM</b> 
@@ -95,7 +98,7 @@
                                 <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://product.hstatic.net/1000220686/product/biorepel_toi_toi_361aa37a22e742f3b293c8bf1922bb8f_master.jpg" alt="">
                             </div>
                             <div class="ctg_n">
-                                <a href="">Thuốc trừ sâu</a>
+                             <a href=""> <div class="edit">Thuốc trừ sâu</div> </a>
                             </div>
                         </div>
                         <div class="prd prd-1">
@@ -103,57 +106,57 @@
                                 <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://cf.shopee.vn/file/fa40918ea31d00908839ad81397b80ab" alt="">
                             </div>
                             <div class="ctg_n">
-                                <a href="">Thuốc diệt cỏ</a>
+                             <a href=""> <div class="edit">Thuốc diệt cỏ</div> </a>
                             </div>
                         </div>
                         <div class="prd prd-1">
                             <div class="ctg_i">
-                                <img style="width: 100%; height: 100%;" src="http://lavamix.vn/upload/products/phan-huu-co-sinh-hoc-minro-dang-vien-no.jpg" alt="">
+                                <img style="width: 100%; height: 100%; border-radius: 5px;" src="http://lavamix.vn/upload/products/phan-huu-co-sinh-hoc-minro-dang-vien-no.jpg" alt="">
                             </div>
                             <div class="ctg_n">
-                                <a href="">Phân hữu cơ</a>
+                             <a href=""> <div class="edit">Phân hữu cơ</div> </a>
                             </div>
                         </div>
                         <div class="prd prd-1">
                             <div class="ctg_i">
-                                <img style="width: 100%; height: 100%;" src="https://cf.shopee.vn/file/fec1f963c40aaecef7496b05d69cd945" alt="">
+                                <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://cf.shopee.vn/file/fec1f963c40aaecef7496b05d69cd945" alt="">
                             </div>
                             <div class="ctg_n">
-                                <a href="">Phân vô cơ</a>
+                             <a href=""> <div class="edit">Phân vô cơ</div> </a>
                             </div>
                         </div>
                     </div>
                     <div class="prod">
                         <div class="prd prd-2">
                             <div class="ctg_i">
-                                <img style="width: 100%; height: 100%;" src="https://thapxanh.com/images/thumbs/0022727_dau-bec-tuoi-canh-dap-xoay-360-ms-5022a-sung-phun-tuoi-cay-12-ren-21-sprinkler-gun.jpeg" alt="">
+                                <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://thapxanh.com/images/thumbs/0022727_dau-bec-tuoi-canh-dap-xoay-360-ms-5022a-sung-phun-tuoi-cay-12-ren-21-sprinkler-gun.jpeg" alt="">
                             </div>
                             <div class="ctg_n">
-                                <a href="">Béc tưới tự động</a>
+                             <a href=""> <div class="edit">Béc tưới tự động</div> </a>
                             </div>
                         </div>
                         <div class="prd prd-2">
                             <div class="ctg_i">
-                             <img style="width: 100%; height: 100%;" src="https://bizweb.dktcdn.net/100/332/983/products/cat-co-honda-gx35-osaika-os26.jpg?v=1601435326517" alt="">  
+                             <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://bizweb.dktcdn.net/100/332/983/products/cat-co-honda-gx35-osaika-os26.jpg?v=1601435326517" alt="">  
                             </div>
                             <div class="ctg_n">
-                                <a href="">Máy cắt cỏ</a>
+                             <a href=""> <div class="edit">Máy cắt cỏ</div> </a>
                             </div>
                         </div>
                         <div class="prd prd-2">
                             <div class="ctg_i">
-                                <img style="width: 100%; height: 100%;" src="https://dungcunongnghiep.vn/files/sanpham/918/1/jpg/hop-dung-cu-lam-vuon-lon-10-mon-xanh-hm216.jpg" alt="">
+                                <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://dungcunongnghiep.vn/files/sanpham/918/1/jpg/hop-dung-cu-lam-vuon-lon-10-mon-xanh-hm216.jpg" alt="">
                             </div>
                             <div class="ctg_n">
-                                <a href="">Dụng cụ làm vườn</a>
+                             <a href=""> <div class="edit">Dụng cụ làm vườn</div> </a>
                             </div>
                         </div>
                         <div class="prd prd-2">
                             <div class="ctg_i">
-                                <img style="width: 100%; height: 100%;" src="https://salt.tikicdn.com/cache/400x400/ts/product/d4/6c/32/0a1453d43e1a9d2e967b8b116b42381e.jpg" alt="">
+                                <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://salt.tikicdn.com/cache/400x400/ts/product/d4/6c/32/0a1453d43e1a9d2e967b8b116b42381e.jpg" alt="">
                             </div>
                             <div class="ctg_n">
-                                <a href="">Đất trồng cây</a>
+                             <a href=""> <div class="edit">Đất trồng cây</div> </a>
                             </div>
                         </div>
                     </div>
@@ -161,14 +164,72 @@
                 <div></div>
             </div>
             <div id="content2">
-                xu huong tim kiem
+                
+                <div class="con2-1">
+                    <div id="con211">xu huong tim kiem</div>
+                    <a href=""><div id="con212">xem them <i class="fas fa-angle-right"></i></div></a>
+                </div>
+                <div class="con2-2">
+                    <a class="con22" href="">
+                        <div class="con221">
+                            <div class="con-tt">Phan bon</div>
+                            <div class="con-sl">1tr san pham</div>
+                        </div>
+
+                        <div class="con222img">
+                            <img style="height: 100%; width: 100%;" src="https://product.hstatic.net/200000239387/product/phan_bon_npk_dau_bo_19-12-8_5s_1kg_55c0b35cd8384626845e75a5db1e792a_1024x1024.jpg" alt="">
+                        </div>
+                    </a>
+
+                    <a class="con22" href="">
+                        <div class="con221">
+                            <div class="con-tt">Phan bon</div>
+                            <div class="con-sl">1tr san pham</div>
+                         </div>
+
+                         <div class="con222img">
+                             <img style="height: 100%; width: 100%;" src="https://product.hstatic.net/200000239387/product/phan_bon_npk_dau_bo_19-12-8_5s_1kg_55c0b35cd8384626845e75a5db1e792a_1024x1024.jpg" alt="">
+                         </div>
+                     </a>
+
+                    <a class="con22" href="">
+                        <div class="con221">
+                            <div class="con-tt">Phan bon</div>
+                            <div class="con-sl">1tr san pham</div>
+                        </div>
+
+                        <div class="con222img">
+                            <img style="height: 100%; width: 100%;" src="https://product.hstatic.net/200000239387/product/phan_bon_npk_dau_bo_19-12-8_5s_1kg_55c0b35cd8384626845e75a5db1e792a_1024x1024.jpg" alt="">
+                        </div>
+                    </a>
+
+                    <a class="con22" href="">
+                        <div class="con221">
+                            <div class="con-tt">Phan bon</div>
+                            <div class="con-sl">1tr san pham</div>
+                        </div>
+
+                        <div class="con222img">
+                            <img style="height: 100%; width: 100%;" src="https://product.hstatic.net/200000239387/product/phan_bon_npk_dau_bo_19-12-8_5s_1kg_55c0b35cd8384626845e75a5db1e792a_1024x1024.jpg" alt="">
+                        </div>
+                    </a>
+                    
+                    <a class="con22" href="">
+                        <div class="con221">
+                            <div class="con-tt">Phan bon</div>
+                            <div class="con-sl">1tr san pham</div>
+                        </div>
+
+                        <div class="con222img">
+                            <img style="height: 100%; width: 100%;" src="https://product.hstatic.net/200000239387/product/phan_bon_npk_dau_bo_19-12-8_5s_1kg_55c0b35cd8384626845e75a5db1e792a_1024x1024.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
             </div>
             <div id="content3">
-                day la top san pham ban chay
+                best seller
             </div>
-            <div id="content4">
-                day la top san pham moi nhat
-            </div>
+            
             <div id="content5">
                 cac bai viet duoc doc nhieu
             </div>
