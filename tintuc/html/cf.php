@@ -11,6 +11,7 @@
             text-align: center;
         }
     </style>
+
     <div class="about">
         <p class="caption_about"><center><h2>QUY TRÌNH TRỒNG VÀ CHẮM SÓC CÂY CÀ PHÊ ĐÚNG KỸ THUẬT</h2></center></p>
         <p>
