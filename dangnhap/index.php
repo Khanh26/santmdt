@@ -16,30 +16,23 @@
   <body>
     <!-- main -->
     <div class="main-w3layouts wrapper">
-      <h1>Tạo tài khoản đăng ký</h1>
+      <h1>Đăng nhập</h1>
       <div class="main-agileinfo">
         <div class="agileits-top">
           <form action="#" method="post">
-            <input class="text" type="text" name="" placeholder="Username" required="">
-            <input class="text email" type="email" name="" placeholder="Email" required="">
             <input class="text inputPhone"  type="text" name="phone" placeholder="Số điện thoại" required="">
-            <input class="text" type="password" name="" placeholder="Password" required="">
-            <input class="text w3lpass" type="password" name="" placeholder="Confirm Password" required="">
+            <input class="text" type="password" name="" placeholder="Mật khẩu" required="">
             <div class="wthree-text">
-              <label class="anim">
-                <input type="checkbox" class="checkbox" required="">
-                <span>I Agree To The Terms & Conditions</span>
-              </label>
               <div class="clear"> </div>
             </div>
-            <input type="submit" value="SIGNUP">
+            <input type="submit" value="ĐĂNG NHẬP">
           </form>
-          <p>Don't have an Account? <a href="#"> Login Now!</a></p>
+          <p>Bạn đã có tài khoản? <a href="#"> Đăng KÝ</a></p>
         </div>
       </div>
       <!-- copyright -->
       <div class="colorlibcopy-agile">
-        <p>© 2018 Colorlib Signup Form. All rights reserved | Design by <a href="https://colorlib.com/" target="_blank">Colorlib</a></p>
+       
       </div>
       <!-- //copyright -->
       <ul class="colorlib-bubbles">
