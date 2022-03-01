@@ -66,6 +66,6 @@
         </div>
     </div>
     <div class="footer_end">
-        © 2021 Sàn Thương Mại Điện Tử Vật Tư Nông Nghiệp.
+        © 2022 Sàn Thương Mại Điện Tử Vật Tư Nông Nghiệp.
     </div>
 </div>

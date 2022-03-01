@@ -13,7 +13,22 @@
             text-align: center;
         }
     </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="http://localhost/santmdt/assets/img/logo1.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://localhost/santmdt/assets/css/layouts.css">
+    <link rel="stylesheet" href="http://localhost/santmdt/assets/css/tintuc.css">
+    <title>Trang chủ - Sàn Thương mại số 1 Việt Nam</title>
+</head>
+<div class="wapper">
+        <!-- header -->
+        <?php include('../../view/layout/client/header.php'); ?>
+        <!-- End header -->
     <div class="about">
+        <br>
         <p class="caption_about"><center><h2>GIỚI THIỆU QUY TRÌNH TRỒNG XOÀI, HƯỚNG DẪN CHĂM SÓC CÂY XOÀI</h2></center></p>
         <p>
         Mai có xuất xứ từ cây hoang dại, có khả năng thích ứng tốt với điều kiện khí hậu nhiệt đới, 
@@ -30,7 +45,9 @@
         và chăm sóc mai cần chú ý một số điểm sau:
 
         </p>
+        <br>
         <p class="img"><img src="http://localhost/santmdt/assets/img/hoa-mai-vang.jpg" alt=""></p>
+        <br>
         <p>
             <h3>1. Chọn đất trồng mai:</h3>
             <li><b>Đất trồng mai trên vườn, líp:</b> Cây mai phát triển tốt trên đất thịt nhẹ có nhiều chất hữu cơ, đất không chua, không bị nhiễm phèn, mặn hoặc các hoá chất độc hại.
@@ -95,10 +112,10 @@
                 Đầu Trâu 009 cũng có hiệu quả cao đối với tất cả các loại mai cảnh.
             </li>
             <br>
-
         </p>
 
     </div>
-        
- </head>   
-</html>
+        <!-- footer -->
+        <?php include('../../view/layout/client/footer.php'); ?>
+        <!-- End footer -->
+</div>
