@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="http://localhost/santmdt/assets/css/style.css">
     <link rel="stylesheet" href="http://localhost/santmdt/assets/css/home.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
     <link rel="stylesheet" href="http://localhost/santmdt/assets/css/layouts.css">
 
     <title>Trang chủ - Sàn Thương mại số 1 Việt Nam</title>
@@ -52,32 +51,6 @@
                             x[slideIndex-1].style.display = "block";  
                         }
                     </script>
-                    <!-- <div style="text-align:center">
-                        <span class="dot"></span> 
-                        <span class="dot"></span> 
-                        <span class="dot"></span> 
-                    </div>
-                    <script>
-                        var slideIndex = 0;
-                        showSlides();
-
-                        function showSlides() {
-                        var i;
-                        var slides = document.getElementsByClassName("mySlides");
-                        var dots = document.getElementsByClassName("dot");
-                        for (i = 0; i < slides.length; i++) {
-                            slides[i].style.display = "none";  
-                        }
-                        slideIndex++;
-                        if (slideIndex > slides.length) {slideIndex = 1}    
-                        for (i = 0; i < dots.length; i++) {
-                            dots[i].className = dots[i].className.replace(" active", "");
-                        }
-                        slides[slideIndex-1].style.display = "block";  
-                        dots[slideIndex-1].className += " active";
-                        setTimeout(showSlides, 1000); // Change image every 2 seconds
-                        }
-                    </script> -->
 
                 </div>
                 <div id="cnt0-2">
@@ -94,6 +67,7 @@
             </div> -->
             <div id="content1">
                 <div id="category">
+                    <br>
                    <b>DANH MỤC SẢN PHẨM</b> 
                 </div>
                 <div id="product">
@@ -171,14 +145,14 @@
             <div id="content2">
                 
                 <div class="con2-1">
-                    <div id="con211">xu huong tim kiem</div>
-                    <a href=""><div id="con212">xem them <i class="fas fa-angle-right"></i></div></a>
+                    <div id="con211">XU HƯỚNG TIỀM KIẾM</div>
+                    <a href=""><div id="con212">XEM THÊM <i class="fas fa-angle-right"></i></div></a>
                 </div>
                 <div class="con2-2">
                     <a class="con22" href="">
                         <div class="con221">
-                            <div class="con-tt">Phan bon</div>
-                            <div class="con-sl">1tr san pham</div>
+                            <div class="con-tt">Phân bón hữu cơ</div>
+                            <div class="con-sl">150+ sản phẩm</div>
                         </div>
 
                         <div class="con222img">
@@ -188,69 +162,83 @@
 
                     <a class="con22" href="">
                         <div class="con221">
-                            <div class="con-tt">Phan bon</div>
-                            <div class="con-sl">1tr san pham</div>
+                            <div class="con-tt">Máy cắt cỏ</div>
+                            <div class="con-sl">100+ sản phẩm</div>
                          </div>
 
                          <div class="con222img">
-                             <img style="height: 100%; width: 100%;" src="https://product.hstatic.net/200000239387/product/phan_bon_npk_dau_bo_19-12-8_5s_1kg_55c0b35cd8384626845e75a5db1e792a_1024x1024.jpg" alt="">
+                             <img style="height: 100%; width: 100%;" src="https://kingsport.vn/image/catalog/product/may_cat_co/M_y_c_t_c_Shindaiwa_260.png" alt="">
                          </div>
                      </a>
 
                     <a class="con22" href="">
                         <div class="con221">
-                            <div class="con-tt">Phan bon</div>
-                            <div class="con-sl">1tr san pham</div>
+                            <div class="con-tt">Phâm đạm</div>
+                            <div class="con-sl">60+ sản phẩm</div>
                         </div>
 
                         <div class="con222img">
-                            <img style="height: 100%; width: 100%;" src="https://product.hstatic.net/200000239387/product/phan_bon_npk_dau_bo_19-12-8_5s_1kg_55c0b35cd8384626845e75a5db1e792a_1024x1024.jpg" alt="">
+                            <img style="height: 100%; width: 100%;" src="https://product.hstatic.net/1000269461/product/phan-bon-ure-dam-phu-my_89c43f2bfccb45babe76bee869033818_master.jpg" alt="">
                         </div>
                     </a>
 
                     <a class="con22" href="">
                         <div class="con221">
-                            <div class="con-tt">Phan bon</div>
-                            <div class="con-sl">1tr san pham</div>
+                            <div class="con-tt">Kéo cắt cành</div>
+                            <div class="con-sl">50+ sản phẩm</div>
                         </div>
 
                         <div class="con222img">
-                            <img style="height: 100%; width: 100%;" src="https://product.hstatic.net/200000239387/product/phan_bon_npk_dau_bo_19-12-8_5s_1kg_55c0b35cd8384626845e75a5db1e792a_1024x1024.jpg" alt="">
+                            <img style="height: 100%; width: 100%;" src="https://www.ketnoitieudung.vn/data/bt10/keo-cat-canh-tolsen-31018-1512958240.jpg" alt="">
                         </div>
                     </a>
                     
                     <a class="con22" href="">
                         <div class="con221">
-                            <div class="con-tt">Phan bon</div>
-                            <div class="con-sl">1tr san pham</div>
+                            <div class="con-tt">Bình tưới cây</div>
+                            <div class="con-sl">50+ sản phẩm</div>
                         </div>
 
                         <div class="con222img">
-                            <img style="height: 100%; width: 100%;" src="https://product.hstatic.net/200000239387/product/phan_bon_npk_dau_bo_19-12-8_5s_1kg_55c0b35cd8384626845e75a5db1e792a_1024x1024.jpg" alt="">
+                            <img style="height: 100%; width: 100%;" src="https://thapxanh.com/images/thumbs/0018917_binh-xit-tuoi-cay-8-lit-dudaco-binh-tuoi-phun-suong-binh-phun-thuoc-tru-sau-phun-thuoc-muoi-moi.jpeg" alt="">
                         </div>
                     </a>
                 </div>
             </div>
-            <div id="content3">
+            <!-- <div id="content3">
                 best seller
-            </div>
+            </div> -->
             
             <div id="content5">
                 <div class="con5-1">
-                    <h1>cac bai viet duoc doc nhieu</h1>
+                    <h3><b>BÀI VIẾT NỔI BẬT</b> </h3>
                 </div>
                 <div class="con5-2">
                     
                     
                     <article class="con5-2-1" >
-                        <a class="thea" href=""><h2>day la bai viet cua ban THINH</h2></a>
+                        <a class="thea" href=""><h4>QUY TRÌNH TRỒNG VÀ CHẮM SÓC CÂY MAI ĐÚNG KỸ THUẬT</h4></a>
                         <img class="theimg" src="http://localhost/santmdt/assets/img/hoa-mai-vang.jpg" alt="">
                         <p class="thep">Mai có xuất xứ từ cây hoang dại, có khả năng thích ứng tốt với điều kiện khí hậu nhiệt đới, 
         đặc biệt với khí hậu miền Nam. Cây mai sinh trưởng và phát triển mạnh, 
         có tuổi thọ cao và nếu được chăm sóc chu đáo sẽ cho hoa nhiều và có màu sắc đẹp.</p>
                     </article>
-                    <article class="con5-2-1"></article>
-                    <article class="con5-2-1"></article>
+                    <article class="con5-2-1">
+                        <a class="thea" href=""><h4>QUY TRÌNH TRỒNG VÀ CHẮM SÓC CÂY CÀ PHÊ ĐÚNG KỸ THUẬT</h4></a>
+                        <img class="theimg" src="http://localhost/santmdt/assets/img/ky_thuat_trong_ca_phe.jpg" alt="">
+                        <p class="thep">Mai có xuất xứ từ cây hoang dại, có khả năng thích ứng tốt với điều kiện khí hậu nhiệt đới, 
+        đặc biệt với khí hậu miền Nam. Cây mai sinh trưởng và phát triển mạnh, 
+        có tuổi thọ cao và nếu được chăm sóc chu đáo sẽ cho hoa nhiều và có màu sắc đẹp.</p>
+
+                    </article>
+                    <article class="con5-2-1">
+                        <a class="thea" href=""><h4>GIỚI THIỆU QUY TRÌNH TRỒNG XOÀI, HƯỚNG DẪN CHĂM SÓC CÂY XOÀI</h4></a>
+                        <img class="theimg" src="http://localhost/santmdt/assets/img/cay-xoai-6.jpg" alt="">
+                        <p class="thep">Giới thiệu quy trình kỹ thuật trồng cà phê, hướng dẫn chăm sóc cây cà phê cho năng suất cao và ổn định. 
+            Ngoài việc lựa chọn giống cà phê đạt tiêu chuẩn, có xuất xứ rõ ràng, thì kỹ thuật trồng cũng quyết định không nhỏ đến sinh trưởng và năng suất của vườn cà phê. 
+                        </p>
+
+                    </article>
                 </div>
                 
                 
