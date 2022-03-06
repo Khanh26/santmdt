@@ -34,22 +34,48 @@
            
            <div class="category">
            
-           <h3>Lọc theo loại sản phẩm</h3>
+            <h3>Lọc theo loại sản phẩm</h3>
 
-            <div id="myBtnContainer">
-            <button class="btn active" onclick="filterSelection('all')"> Thuốc trừ sâu</button>
-            <button class="btn" onclick="filterSelection('nature')"> Thuốc diệt cỏ</button>
-            <button class="btn" onclick="filterSelection('cars')"> Phân hữu cơ</button>
-            <button class="btn" onclick="filterSelection('people')"> Phân vô cơ</button>
-            <button class="btn" onclick="filterSelection('people')"> Béc tưới cây</button>
-            <button class="btn" onclick="filterSelection('people')"> Máy căt cỏ</button>
-            <button class="btn" onclick="filterSelection('people')"> Dụng cụ làm vườn</button>
-            <button class="btn" onclick="filterSelection('people')"> Đất trồng cây</button>
-
-
-
-            </div>
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')"> Thuốc trừ sâu</button>
+                    <button class="btn" onclick="filterSelection('nature')"> Thuốc diệt cỏ</button>
+                    <button class="btn" onclick="filterSelection('cars')"> Phân hữu cơ</button>
+                    <button class="btn" onclick="filterSelection('people')"> Phân vô cơ</button>
+                    <button class="btn" onclick="filterSelection('people')"> Béc tưới cây</button>
+                    <button class="btn" onclick="filterSelection('people')"> Máy căt cỏ</button>
+                    <button class="btn" onclick="filterSelection('people')"> Dụng cụ làm vườn</button>
+                    <button class="btn" onclick="filterSelection('people')"> Đất trồng cây</button>
+                </div>
            </div>
+           <div class="blog">
+                <div class="blog1">
+                    <article class="con5-2-1">
+                            <a class="thea" href=""><h4>GIỚI THIỆU QUY TRÌNH TRỒNG XOÀI, HƯỚNG DẪN CHĂM SÓC CÂY XOÀI</h4></a>
+                            <img class="theimg" src="http://localhost/santmdt/assets/img/cay-xoai-6.jpg" alt="">
+                            <p class="thep">Giới thiệu quy trình kỹ thuật trồng cà phê, hướng dẫn chăm sóc cây cà phê cho năng suất cao và ổn định. 
+                                <!-- Ngoài việc lựa chọn giống cà phê đạt tiêu chuẩn, có xuất xứ rõ ràng, thì kỹ thuật trồng cũng quyết định không nhỏ đến sinh trưởng và năng suất của vườn cà phê.  -->
+                            </p>
+                    </article>
+                </div>
+                <div class="blog1">
+                    <article class="con5-2-1">
+                                <a class="thea" href=""><h4>GIỚI THIỆU QUY TRÌNH TRỒNG XOÀI, HƯỚNG DẪN CHĂM SÓC CÂY XOÀI</h4></a>
+                                <img class="theimg" src="http://localhost/santmdt/assets/img/cay-xoai-6.jpg" alt="">
+                                <p class="thep">Giới thiệu quy trình kỹ thuật trồng cà phê, hướng dẫn chăm sóc cây cà phê cho năng suất cao và ổn định. 
+                                    <!-- Ngoài việc lựa chọn giống cà phê đạt tiêu chuẩn, có xuất xứ rõ ràng, thì kỹ thuật trồng cũng quyết định không nhỏ đến sinh trưởng và năng suất của vườn cà phê.  -->
+                                </p>
+                    </article>
+                </div>
+                <div class="blog1">
+                    <article class="con5-2-1">
+                            <a class="thea" href=""><h4>GIỚI THIỆU QUY TRÌNH TRỒNG XOÀI, HƯỚNG DẪN CHĂM SÓC CÂY XOÀI</h4></a>
+                            <img class="theimg" src="http://localhost/santmdt/assets/img/cay-xoai-6.jpg" alt="">
+                            <p class="thep">Giới thiệu quy trình kỹ thuật trồng cà phê, hướng dẫn chăm sóc cây cà phê cho năng suất cao và ổn định. 
+                                <!-- Ngoài việc lựa chọn giống cà phê đạt tiêu chuẩn, có xuất xứ rõ ràng, thì kỹ thuật trồng cũng quyết định không nhỏ đến sinh trưởng và năng suất của vườn cà phê.  -->
+                            </p>
+                    </article>
+                </div>
+            </div>
        </div>
 
         <div class="product">
