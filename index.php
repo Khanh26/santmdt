@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +21,7 @@
         <!-- End header -->
 
         <!-- Content -->
-            <!-- Code trang chu o day -->
+        <!-- Code trang chu o day -->
         <div id="wrap">
             <div id="content0">
                 <div id="cnt0-1">
@@ -35,29 +36,35 @@
                     <script>
                         var slideIndex = 1;
                         showDivs(slideIndex);
+
                         function plusDivs(n) {
-                         showDivs(slideIndex += n);
+                            showDivs(slideIndex += n);
                         }
+
                         function showDivs(n) {
                             var i;
                             var x = document.getElementsByClassName("mySlides");
-                            if (n > x.length) {slideIndex = 1}
-                            if (n < 1) {slideIndex = x.length}
-                            for (i = 0; i < x.length; i++) {
-                                x[i].style.display = "none";  
+                            if (n > x.length) {
+                                slideIndex = 1
                             }
-                            x[slideIndex-1].style.display = "block";  
+                            if (n < 1) {
+                                slideIndex = x.length
+                            }
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            x[slideIndex - 1].style.display = "block";
                         }
                     </script>
 
                 </div>
                 <div id="cnt0-2">
                     <div id="cnt02a">
-                        <img style="width: 100%; height: 100%; border-radius: 5px;"  src="https://cf.shopee.vn/file/47b26a12d96788aebb0d9c5e6ecaa7c8">
+                        <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://cf.shopee.vn/file/47b26a12d96788aebb0d9c5e6ecaa7c8">
                     </div>
-                    
+
                     <div id="cnt02b">
-                        <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://magiamgiashopee.com/wp-content/uploads/2019/05/sieu-giam-gia-shopee.jpg" >
+                        <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://magiamgiashopee.com/wp-content/uploads/2019/05/sieu-giam-gia-shopee.jpg">
                     </div>
                 </div>
             </div>
@@ -67,7 +74,7 @@
             <div id="content1">
                 <div id="category">
                     <br>
-                   <b>DANH MỤC SẢN PHẨM</b> 
+                    <b>DANH MỤC SẢN PHẨM</b>
                 </div>
                 <div id="product">
                     <div class="prod">
@@ -76,7 +83,9 @@
                                 <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://product.hstatic.net/1000220686/product/biorepel_toi_toi_361aa37a22e742f3b293c8bf1922bb8f_master.jpg" alt="">
                             </div>
                             <div class="ctg_n">
-                             <a href=""> <div class="edit">Thuốc trừ sâu</div> </a>
+                                <a href="">
+                                    <div class="edit">Thuốc trừ sâu</div>
+                                </a>
                             </div>
                         </div>
                         <div class="prd prd-1">
@@ -84,7 +93,9 @@
                                 <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://cf.shopee.vn/file/fa40918ea31d00908839ad81397b80ab" alt="">
                             </div>
                             <div class="ctg_n">
-                             <a href=""> <div class="edit">Thuốc diệt cỏ</div> </a>
+                                <a href="">
+                                    <div class="edit">Thuốc diệt cỏ</div>
+                                </a>
                             </div>
                         </div>
                         <div class="prd prd-1">
@@ -92,7 +103,9 @@
                                 <img style="width: 100%; height: 100%; border-radius: 5px;" src="http://lavamix.vn/upload/products/phan-huu-co-sinh-hoc-minro-dang-vien-no.jpg" alt="">
                             </div>
                             <div class="ctg_n">
-                             <a href=""> <div class="edit">Phân hữu cơ</div> </a>
+                                <a href="">
+                                    <div class="edit">Phân hữu cơ</div>
+                                </a>
                             </div>
                         </div>
                         <div class="prd prd-1">
@@ -100,7 +113,9 @@
                                 <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://cf.shopee.vn/file/fec1f963c40aaecef7496b05d69cd945" alt="">
                             </div>
                             <div class="ctg_n">
-                             <a href=""> <div class="edit">Phân vô cơ</div> </a>
+                                <a href="">
+                                    <div class="edit">Phân vô cơ</div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -110,15 +125,19 @@
                                 <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://thapxanh.com/images/thumbs/0022727_dau-bec-tuoi-canh-dap-xoay-360-ms-5022a-sung-phun-tuoi-cay-12-ren-21-sprinkler-gun.jpeg" alt="">
                             </div>
                             <div class="ctg_n">
-                             <a href=""> <div class="edit">Béc tưới tự động</div> </a>
+                                <a href="">
+                                    <div class="edit">Béc tưới tự động</div>
+                                </a>
                             </div>
                         </div>
                         <div class="prd prd-2">
                             <div class="ctg_i">
-                             <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://bizweb.dktcdn.net/100/332/983/products/cat-co-honda-gx35-osaika-os26.jpg?v=1601435326517" alt="">  
+                                <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://bizweb.dktcdn.net/100/332/983/products/cat-co-honda-gx35-osaika-os26.jpg?v=1601435326517" alt="">
                             </div>
                             <div class="ctg_n">
-                             <a href=""> <div class="edit">Máy cắt cỏ</div> </a>
+                                <a href="">
+                                    <div class="edit">Máy cắt cỏ</div>
+                                </a>
                             </div>
                         </div>
                         <div class="prd prd-2">
@@ -126,7 +145,9 @@
                                 <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://dungcunongnghiep.vn/files/sanpham/918/1/jpg/hop-dung-cu-lam-vuon-lon-10-mon-xanh-hm216.jpg" alt="">
                             </div>
                             <div class="ctg_n">
-                             <a href=""> <div class="edit">Dụng cụ làm vườn</div> </a>
+                                <a href="">
+                                    <div class="edit">Dụng cụ làm vườn</div>
+                                </a>
                             </div>
                         </div>
                         <div class="prd prd-2">
@@ -134,7 +155,9 @@
                                 <img style="width: 100%; height: 100%; border-radius: 5px;" src="https://salt.tikicdn.com/cache/400x400/ts/product/d4/6c/32/0a1453d43e1a9d2e967b8b116b42381e.jpg" alt="">
                             </div>
                             <div class="ctg_n">
-                             <a href=""> <div class="edit">Đất trồng cây</div> </a>
+                                <a href="">
+                                    <div class="edit">Đất trồng cây</div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -142,10 +165,12 @@
                 <div></div>
             </div>
             <div id="content2">
-                
+
                 <div class="con2-1">
                     <div id="con211">XU HƯỚNG TIỀM KIẾM</div>
-                    <a href=""><div id="con212">XEM THÊM <i class="fas fa-angle-right"></i></div></a>
+                    <a href="">
+                        <div id="con212">XEM THÊM <i class="fas fa-angle-right"></i></div>
+                    </a>
                 </div>
                 <div class="con2-2">
                     <a class="con22" href="">
@@ -163,12 +188,12 @@
                         <div class="con221">
                             <div class="con-tt">Máy cắt cỏ</div>
                             <div class="con-sl">100+ sản phẩm</div>
-                         </div>
+                        </div>
 
-                         <div class="con222img">
-                             <img style="height: 100%; width: 100%;" src="https://kingsport.vn/image/catalog/product/may_cat_co/M_y_c_t_c_Shindaiwa_260.png" alt="">
-                         </div>
-                     </a>
+                        <div class="con222img">
+                            <img style="height: 100%; width: 100%;" src="https://kingsport.vn/image/catalog/product/may_cat_co/M_y_c_t_c_Shindaiwa_260.png" alt="">
+                        </div>
+                    </a>
 
                     <a class="con22" href="">
                         <div class="con221">
@@ -191,7 +216,7 @@
                             <img style="height: 100%; width: 100%;" src="https://www.ketnoitieudung.vn/data/bt10/keo-cat-canh-tolsen-31018-1512958240.jpg" alt="">
                         </div>
                     </a>
-                    
+
                     <a class="con22" href="">
                         <div class="con221">
                             <div class="con-tt">Bình tưới cây</div>
@@ -207,48 +232,55 @@
             <!-- <div id="content3">
                 best seller
             </div> -->
-            
+
             <div id="content5">
                 <div class="con5-1">
                     <h3><b>BÀI VIẾT NỔI BẬT</b> </h3>
                 </div>
                 <div class="con5-2">
-                    
-                    
-                    <article class="con5-2-1" >
-                        <a class="thea" href=""><h4>QUY TRÌNH TRỒNG VÀ CHẮM SÓC CÂY MAI ĐÚNG KỸ THUẬT</h4></a>
+
+
+                    <article class="con5-2-1">
+                        <a class="thea" href="">
+                            <h4>QUY TRÌNH TRỒNG VÀ CHẮM SÓC CÂY MAI ĐÚNG KỸ THUẬT</h4>
+                        </a>
                         <img class="theimg" src="http://localhost/santmdt/assets/img/hoa-mai-vang.jpg" alt="">
-                        <p class="thep">Mai có xuất xứ từ cây hoang dại, có khả năng thích ứng tốt với điều kiện khí hậu nhiệt đới, 
-        đặc biệt với khí hậu miền Nam. Cây mai sinh trưởng và phát triển mạnh, 
-        có tuổi thọ cao và nếu được chăm sóc chu đáo sẽ cho hoa nhiều và có màu sắc đẹp.</p>
+                        <p class="thep">Mai có xuất xứ từ cây hoang dại, có khả năng thích ứng tốt với điều kiện khí hậu nhiệt đới,
+                            đặc biệt với khí hậu miền Nam. Cây mai sinh trưởng và phát triển mạnh,
+                            có tuổi thọ cao và nếu được chăm sóc chu đáo sẽ cho hoa nhiều và có màu sắc đẹp.</p>
                     </article>
                     <article class="con5-2-1">
-                        <a class="thea" href=""><h4>QUY TRÌNH TRỒNG VÀ CHẮM SÓC CÂY CÀ PHÊ ĐÚNG KỸ THUẬT</h4></a>
+                        <a class="thea" href="">
+                            <h4>QUY TRÌNH TRỒNG VÀ CHẮM SÓC CÂY CÀ PHÊ ĐÚNG KỸ THUẬT</h4>
+                        </a>
                         <img class="theimg" src="http://localhost/santmdt/assets/img/ky_thuat_trong_ca_phe.jpg" alt="">
-                        <p class="thep">Mai có xuất xứ từ cây hoang dại, có khả năng thích ứng tốt với điều kiện khí hậu nhiệt đới, 
-        đặc biệt với khí hậu miền Nam. Cây mai sinh trưởng và phát triển mạnh, 
-        có tuổi thọ cao và nếu được chăm sóc chu đáo sẽ cho hoa nhiều và có màu sắc đẹp.</p>
+                        <p class="thep">Mai có xuất xứ từ cây hoang dại, có khả năng thích ứng tốt với điều kiện khí hậu nhiệt đới,
+                            đặc biệt với khí hậu miền Nam. Cây mai sinh trưởng và phát triển mạnh,
+                            có tuổi thọ cao và nếu được chăm sóc chu đáo sẽ cho hoa nhiều và có màu sắc đẹp.</p>
 
                     </article>
                     <article class="con5-2-1">
-                        <a class="thea" href=""><h4>GIỚI THIỆU QUY TRÌNH TRỒNG XOÀI, HƯỚNG DẪN CHĂM SÓC CÂY XOÀI</h4></a>
+                        <a class="thea" href="">
+                            <h4>GIỚI THIỆU QUY TRÌNH TRỒNG XOÀI, HƯỚNG DẪN CHĂM SÓC CÂY XOÀI</h4>
+                        </a>
                         <img class="theimg" src="http://localhost/santmdt/assets/img/cay-xoai-6.jpg" alt="">
-                        <p class="thep">Giới thiệu quy trình kỹ thuật trồng cà phê, hướng dẫn chăm sóc cây cà phê cho năng suất cao và ổn định. 
-            Ngoài việc lựa chọn giống cà phê đạt tiêu chuẩn, có xuất xứ rõ ràng, thì kỹ thuật trồng cũng quyết định không nhỏ đến sinh trưởng và năng suất của vườn cà phê. 
+                        <p class="thep">Giới thiệu quy trình kỹ thuật trồng cà phê, hướng dẫn chăm sóc cây cà phê cho năng suất cao và ổn định.
+                            Ngoài việc lựa chọn giống cà phê đạt tiêu chuẩn, có xuất xứ rõ ràng, thì kỹ thuật trồng cũng quyết định không nhỏ đến sinh trưởng và năng suất của vườn cà phê.
                         </p>
 
                     </article>
                 </div>
-                
-                
+
+                            
             </div>
-        </div>  
+        </div>
         <!-- End content -->
 
         <!-- footer -->
-        <?php include('./view/layout/client/footer.php');?>
+        <?php include('./view/layout/client/footer.php'); ?>
         <!-- End footer -->
     </div>
 
 </body>
+
 </html>
