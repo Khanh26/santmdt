@@ -13,7 +13,7 @@
 }
 
 .filter{
-    
+  background-color: aqua;
     flex-basis: 20%;
     margin-left: 2%;
 
@@ -160,3 +160,23 @@ input[type=range] {
   #range{
     padding: 35px 0px 0px;
   }
+/* category */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+
+   
