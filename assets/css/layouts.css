@@ -65,6 +65,7 @@ a {
     border-radius: 2px;
     padding: 0 20px;
     border: none;
+    font-size: 15px;
 }
 
 #submit {
@@ -73,6 +74,7 @@ a {
     border-radius: 2px;
     cursor: pointer;
     border: none;
+    font-size: 15px;
 }
 
 #he2-2 {
@@ -191,8 +193,9 @@ a {
     background: #666565;
     color: white;
     margin: 0 auto;
-    font-size: 25px;
+    font-size: 19px;
     padding: 0 42px;
+    
 }
 
 .footer .item-footer {

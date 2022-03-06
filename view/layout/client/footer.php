@@ -31,6 +31,10 @@
                 <i class="fas fa-arrow-right icon-footer"></i>
                 Chính sách đổi trả và hoàn tiền
             </a>
+            <a href="" class="link-footer">
+                <i class="fas fa-arrow-right icon-footer"></i>
+                Điều khoản
+            </a>
         </div>
             <!-- loại san phẩm -->
         <div class="item-footer">
