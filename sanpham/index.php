@@ -37,14 +37,14 @@
             <h3>Lọc theo loại sản phẩm</h3>
 
                 <div id="myBtnContainer">
-                    <button class="btn active" onclick="filterSelection('all')"> Thuốc trừ sâu</button>
-                    <button class="btn" onclick="filterSelection('nature')"> Thuốc diệt cỏ</button>
-                    <button class="btn" onclick="filterSelection('cars')"> Phân hữu cơ</button>
-                    <button class="btn" onclick="filterSelection('people')"> Phân vô cơ</button>
-                    <button class="btn" onclick="filterSelection('people')"> Béc tưới cây</button>
-                    <button class="btn" onclick="filterSelection('people')"> Máy căt cỏ</button>
-                    <button class="btn" onclick="filterSelection('people')"> Dụng cụ làm vườn</button>
-                    <button class="btn" onclick="filterSelection('people')"> Đất trồng cây</button>
+                <button class="btn active" onclick="filterSelection('all')"> Thuốc trừ sâu</button>
+                <button class="btn" onclick="filterSelection('nature')"> Thuốc diệt cỏ</button>
+                <button class="btn" onclick="filterSelection('cars')"> Phân hữu cơ</button>
+                <button class="btn" onclick="filterSelection('people')"> Phân vô cơ</button>
+                <button class="btn" onclick="filterSelection('people')"> Béc tưới cây</button>
+                <button class="btn" onclick="filterSelection('people')"> Máy căt cỏ</button>
+                <button class="btn" onclick="filterSelection('people')"> Dụng cụ làm vườn</button>
+                <button class="btn" onclick="filterSelection('people')"> Đất trồng cây</button>
                 </div>
            </div>
            <div class="blog">
@@ -75,7 +75,9 @@
                             </p>
                     </article>
                 </div>
-            </div>
+            </div>s
+           
+
        </div>
 
         <div class="product">

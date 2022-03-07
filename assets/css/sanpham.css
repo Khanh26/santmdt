@@ -83,6 +83,9 @@
     height: 40px;
 
 }
+ .item_cart a{
+   color: white ;
+ }
 
 .cart{
     line-height: 40px;
