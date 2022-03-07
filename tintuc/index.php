@@ -17,9 +17,7 @@
         <!-- End header -->
 
         <!-- Content -->
-<<<<<<< HEAD
             <!-- Code trang chu o day -->
-=======
         <div calss="tintuc_1">
             <h1>
                 <center>Kỹ Thuật Nông Nghiệp</center>
@@ -101,7 +99,6 @@
             <hr>
 
         </div>
->>>>>>> 63659451eac96d3e9f1ec6aa7e5d1d048fc32f26
         <!-- End content -->
 
         <!-- footer -->
