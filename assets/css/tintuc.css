@@ -1,32 +1,64 @@
- .tintuc_1 {
-    border: 15px solid black;
-    margin: 20px;
-    background-color: rgb(212, 73, 26);
-    padding : 50px;
-    width: 800px;
-    height: 220px;
-  }
-
-  .fill {object-fit: fill;}
-  .contain {object-fit: contain;}
-  .cover {object-fit: cover;}
-  .scale-down {object-fit: scale-down;}
-  .none {object-fit: none;}
-  
-  .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .img1 {
-    float: left;
-    margin-left: 50px;
-  }
-.h2 {
-  margin-left: 50px;
+.sidebar-baiviet{
+    width: 98%;
+    height: 1400px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
 }
 
-.tt {
-  margin-left: 2000px;
+.a{
+    flex-basis: 10%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.b{
+    flex-basis: 200%;
+    display: flex;
+    justify-content: space-evenly;
+    float:right;
+    width:auto;
+}
+
+.sidebar{
+    flex-basis: 35%;
+    position: relative;
+    
+}
+
+.hinhanh{
+    flex-basis: 65%;
+    position: relative;
+    box-shadow: 5px 5px 3px #ffffff;
+}
+.the_a{
+    position: absolute;
+    width: 100%;
+    background-color: #A8CA27;
+    height: 15%;
+    top: 0;
+    
+}
+.baiviet-img{
+    width: 50%;
+    height: 85%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.the_p{
+    width: 50%;
+    height: 85%;
+    position: absolute;
+    bottom: 10;
+    right: 0;
+    font-size: 25px;
+    padding: 5%;
+    box-sizing: border-box;
+    text-align:  justify;
+}
+
+.h{
+    font-size: 25px;
 }
