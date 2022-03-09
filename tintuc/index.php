@@ -26,6 +26,12 @@
     background-color: rgb(255, 255, 255);
 }
 
+
+.tt{
+    flex-basis: 10%;
+    text-align: center;
+    
+}
 .b{
     flex-basis: 200%;
     display: flex;
@@ -73,7 +79,23 @@
 }
 
 .h{
+    background-color: ;
     font-size: 25px;
+}
+
+
+.danhmuc{
+    text-align: center;
+    font-size: 30px;
+    background-color: ;
+    height: auto;
+}
+
+.meow{
+    background-color: #A8CA27;   
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 25px
 }
 </style>
 
@@ -92,13 +114,39 @@
 
 
 
+
+            <!-- SIDEBAR -->
             <div class="b">
                 <article class="sidebar">
                     <div class="h">
-                    <h1><center>Danh Mục Sản Phẩm</center></h1>
+                        <h1><center>Danh Mục Sản Phẩm</center></h1>
+                    </div>
+                    <div class="danhmuc">
+                        <div class="meow">
+                            <ul>
+                                Phân Bón
+                            </ul>
+
+                            <ul>
+                                Thuốc Trừ Sâu
+                            </ul>
+
+                            <ul>
+                                Thuốc Diệt Cỏ
+                            </ul>
+
+                            <ul>
+                                Dụng Cụ Làm Vườn
+                            </ul>
+                        
+                        </div>
                     </div>
                 </article>
+                <!-- SIDEBAR -->
 
+
+
+            <!-- BÀI VIẾT -->
                 <article class="hinhanh">
                     <a class="the_a">
                         <br>
@@ -123,9 +171,10 @@
                 
             </div>
             <br>
-            <br>
 
 
+
+            
             <div class="b">
                 <article class="sidebar">
 
@@ -153,7 +202,7 @@
                 </article>
             </div>
             <br>
-            <br>
+            
 
 
 
@@ -184,10 +233,14 @@
 
             </div>
             <br>
-            <br>
+            <!-- END BÀI VIẾT -->
 
-            <div class="a">
-                <h1>Tiếp theo<h1>
+            
+
+
+
+            <div class="tt">
+                <h4>Tiếp theo<h4>
             </div>
         </div>
 

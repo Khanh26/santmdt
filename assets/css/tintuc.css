@@ -13,6 +13,12 @@
     background-color: rgb(255, 255, 255);
 }
 
+
+.tt{
+    flex-basis: 10%;
+    text-align: center;
+    
+}
 .b{
     flex-basis: 200%;
     display: flex;
@@ -53,7 +59,7 @@
     position: absolute;
     bottom: 10;
     right: 0;
-    font-size: 25px;
+    font-size: 24px;
     padding: 5%;
     box-sizing: border-box;
     text-align:  justify;
@@ -61,4 +67,18 @@
 
 .h{
     font-size: 25px;
+}
+
+
+.danhmuc{
+    text-align: center;
+    font-size: 30px;
+    height: auto;
+}
+
+.meow{
+    background-color: #A8CA27;   
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 25px
 }
