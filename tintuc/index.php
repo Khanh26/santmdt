@@ -198,7 +198,7 @@
                             22. 02. 2022
                             <br>
                             <br>
-                            <b>Cửa Hàng Vật Tư Nông Nghiệp Ngọc Quyền</b>
+                            <b>Cửa Hàng Vật Tư Nông Nghiệp Phạm Ngọc Quyền</b>
                         </a>
                     </p>
 
