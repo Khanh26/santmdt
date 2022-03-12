@@ -43,7 +43,6 @@
 .sidebar{
     flex-basis: 35%;
     position: relative;
-    
 }
 
 .hinhanh{
@@ -72,30 +71,34 @@
     position: absolute;
     bottom: 10;
     right: 0;
-    font-size: 24px;
+    font-size: 22px;
     padding: 5%;
     box-sizing: border-box;
     text-align:  justify;
 }
 
 .h{
-    background-color: ;
-    font-size: 25px;
+    font-size: 22px;
+    border-radius: 25px
 }
 
+.hh{
+    font-size: 20px;
+    border-radius: 25px
+}
 
 .danhmuc{
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     background-color: ;
     height: auto;
 }
 
 .meow{
     background-color: #A8CA27;   
-    margin-left: 100px;
-    margin-right: 100px;
-    border-radius: 25px
+    margin-left: 90px;
+    margin-right: 90px;
+    border-radius: 20px
 }
 </style>
 
@@ -119,26 +122,56 @@
             <div class="b">
                 <article class="sidebar">
                     <div class="h">
-                        <h1><center>Danh Mục Sản Phẩm</center></h1>
+                        <h1><center>Danh Mục Bài Viết</center></h1>
                     </div>
                     <div class="danhmuc">
                         <div class="meow">
                             <ul>
-                                Phân Bón
+                                <u>Tin Tức Nông Nghiệp</u>
+                                <li>
+                                    Mãng Cầu
+                                </li>
+
+                                <li>
+                                    Cà Phê 10tấn/ha
+                                </li>
+
+                                <li>
+                                    Làng hoa Cái Mơn sau bão
+                                </li>
+
+                                <li>
+                                    
+                                </li>
                             </ul>
 
                             <ul>
-                                Thuốc Trừ Sâu
+                                <u>Giải Pháp Kỹ Thuật</u>
+                                <li>
+                                    Xoài
+                                </li>
+                                <li>
+                                    Cà Phê
+                                </li>
+                                <li>
+                                    Hoa Cúc
+                                </li>
+                                <li>
+                                    Hoa Lan
+                                </li>
+                                <li>
+                                    Hoa Mai
+                                </li>
+                                <li>
+                                    Hoa Hồng
+                                </li>
+                                <li>
+                                    Hướng Dương
+                                </li>
+                                <li>
+                                    Hoa Mơ (Thịt Chó)
+                                </li>
                             </ul>
-
-                            <ul>
-                                Thuốc Diệt Cỏ
-                            </ul>
-
-                            <ul>
-                                Dụng Cụ Làm Vườn
-                            </ul>
-                        
                         </div>
                     </div>
                 </article>
@@ -158,12 +191,14 @@
                         có tuổi thọ cao và nếu được chăm sóc chu đáo sẽ cho hoa nhiều và có màu sắc đẹp.
                         <br>
                         <a href="http://localhost/santmdt/tintuc/html/hoamai.php">
-                            <br>
                             >>Xem Thêm
                         </a>
                         <br>
                         <a>
                             22. 02. 2022
+                            <br>
+                            <br>
+                            <b>Cửa Hàng Vật Tư Nông Nghiệp Ngọc Quyền</b>
                         </a>
                     </p>
 
@@ -191,12 +226,14 @@
                         có tuổi thọ cao và nếu được chăm sóc chu đáo sẽ cho hoa nhiều và có màu sắc đẹp.
                         <br>
                         <a href="http://localhost/santmdt/tintuc/html/cf.php">
-                            <br>
                             >>Xem Thêm
                         </a>
                         <br>
                         <a>
                             22. 02. 2022
+                            <br>
+                            <br>
+                            <b> Cửa Hàng Vật Tư Nông Nghiệp Phạm Ngọc Quyền</b>
                         </a>
                     </p>
                 </article>
@@ -221,12 +258,14 @@
                         Ngoài việc lựa chọn giống cà phê đạt tiêu chuẩn, có xuất xứ rõ ràng, thì kỹ thuật trồng cũng quyết định không nhỏ đến sinh trưởng và năng suất của vườn cà phê.
                         <br>
                         <a href="http://localhost/santmdt/tintuc/html/xoai.php">
-                            <br>
                             >>Xem Thêm
                         </a>
                         <br>
                         <a>
                             22. 02. 2022
+                            <br>
+                            <br>
+                            <b>Cửa Hàng Vật Tư Nông Nghiệp Phạm Ngọc Quyền</b>
                         </a>
                     </p>
                 </article>
