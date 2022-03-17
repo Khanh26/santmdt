@@ -127,7 +127,7 @@
                     <div class="danhmuc">
                         <div class="meow">
                             <ul>
-                                <u>Tin Tức Nông Nghiệp</u>
+                                <u><b>Tin Tức Nông Nghiệp</b></u>
                                 <li>
                                     Mãng Cầu
                                 </li>
@@ -146,7 +146,7 @@
                             </ul>
 
                             <ul>
-                                <u>Giải Pháp Kỹ Thuật</u>
+                                <u><b>Giải Pháp Kỹ Thuật</b></u>
                                 <li>
                                     Xoài
                                 </li>
