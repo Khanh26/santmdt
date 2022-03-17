@@ -109,15 +109,15 @@
 
 
     <div class="container">
-        <h2>Binh Luan Cua Khach Hang</h2>
+        <h2><b>Bình Luận Của Khách Hàng</b></h2>
         <p></p>
         <form>
             <div class="form-group">
-                <label for="comment">Comment:</label>
+                <label for="comment"><b>Comment:</b></label>
                 <textarea class="form-control" rows="5" id="comment"></textarea>
             </div>
         </form>
-    </div>  
+    </div>   
 
         <!-- footer -->
         <?php include('../../view/layout/client/footer.php'); ?>
