@@ -22,6 +22,11 @@
     <link rel="stylesheet" href="http://localhost/santmdt/assets/css/layouts.css">
     <link rel="stylesheet" href="http://localhost/santmdt/assets/css/tintuc.css">
     <title>Trang chủ - Sàn Thương mại số 1 Việt Nam</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <div class="wapper">
         <!-- header -->
@@ -114,8 +119,20 @@
             </li>
             <br>
         </p>
-
+        
     </div>
+
+    <div class="container">
+        <h2>Binh Luan Cua Khach Hang</h2>
+        <p></p>
+        <form>
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+        </form>
+    </div>  
+
         <!-- footer -->
         <?php include('../../view/layout/client/footer.php'); ?>
         <!-- End footer -->
