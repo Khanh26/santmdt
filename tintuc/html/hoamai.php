@@ -30,6 +30,7 @@
     <div class="about">
         <br>
         <p class="caption_about"><center><h2>GIỚI THIỆU QUY TRÌNH TRỒNG XOÀI, HƯỚNG DẪN CHĂM SÓC CÂY XOÀI</h2></center></p>
+        <br>
         <p>
         Mai có xuất xứ từ cây hoang dại, có khả năng thích ứng tốt với điều kiện khí hậu nhiệt đới, 
         đặc biệt với khí hậu miền Nam. Cây mai sinh trưởng và phát triển mạnh, 
