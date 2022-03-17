@@ -221,9 +221,9 @@
                         <h2><center>QUY TRÌNH TRỒNG VÀ CHẮM SÓC CÂY CÀ PHÊ ĐÚNG KỸ THUẬT</center></h2>
                     </a>
                     <img class="baiviet-img" src="http://localhost/santmdt/assets/img/ky_thuat_trong_ca_phe.jpg" alt="">
-                    <p class="the_p">Mai có xuất xứ từ cây hoang dại, có khả năng thích ứng tốt với điều kiện khí hậu nhiệt đới,
-                        đặc biệt với khí hậu miền Nam. Cây mai sinh trưởng và phát triển mạnh,
-                        có tuổi thọ cao và nếu được chăm sóc chu đáo sẽ cho hoa nhiều và có màu sắc đẹp.
+                    <p class="the_p">Giới thiệu quy trình kỹ thuật trồng cà phê, hướng dẫn chăm sóc cây cà phê cho năng suất cao và ổn định. 
+            Ngoài việc lựa chọn giống cà phê đạt tiêu chuẩn, có xuất xứ rõ ràng, 
+            thì kỹ thuật trồng cũng quyết định không nhỏ đến sinh trưởng và năng suất của vườn cà phê. 
                         <br>
                         <a href="http://localhost/santmdt/tintuc/html/cf.php">
                             >>Xem Thêm
