@@ -21,15 +21,11 @@
                 <i class="fas fa-user icon-sidebar"></i>Thông tin tài khoản</a>
             </li>
             <li class="item-sidebar">
-                <a href="" class="item-link-sidebar "><i class="fas fa-box icon-sidebar"></i>Đơn hàng của tôi</a>
+                <a href="http://localhost/santmdt/donhang" class="item-link-sidebar <?php echo $currentRoute == 'donhang' ? 'active' : '';?>"><i class="fas fa-box icon-sidebar"></i>Đơn hàng của tôi</a>
             </li>
             <li class="item-sidebar">
-                <a href="http://localhost/santmdt/yeuthich" class="item-link-sidebar <?php echo $currentRoute == 'yeuthich' ? 'active' : '';?>"><i class="fas fa-heart icon-sidebar"></i>Sản phẩm yêu thích</a>
-            </li>
-            <li class="item-sidebar">
-                <a href="" class="item-link-sidebar"><i class="fas fa-map icon-sidebar"></i>Sổ địa chỉ của tôi</a></li>
-            <li class="item-sidebar">
-                <a href="" class="item-link-sidebar"><i class="fas fa-comment-alt icon-sidebar"></i>Nhận xét của tôi</a>
+                <a href="http://localhost/santmdt/yeuthich" class="item-link-sidebar <?php echo $currentRoute == 'yeuthich' ? 'active' : '';?>">
+                <i class="fas fa-heart icon-sidebar"></i>Sản phẩm yêu thích</a>
             </li>
         </ul>
     </div>
