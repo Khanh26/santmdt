@@ -126,6 +126,7 @@
         <!-- End footer -->
     </div>
     <script src="http://localhost/santmdt/assets/js/favorite.js"></script>
+    <script src="http://localhost/santmdt/assets/js/orders.js"></script>
 </body>
 
 </html>
