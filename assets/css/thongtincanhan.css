@@ -67,3 +67,65 @@
 .information #btn-submit-form:hover {
     background-color: #7d9b12;
 }
+
+/* order */
+
+.orders .tabs-order {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.orders .tab-order {
+    width: 25%;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.orders .tab-order:first-child::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 50%;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 0;
+    background-color: #A8CA27;
+}
+
+.orders .tab-order:last-child::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 50%;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+    background-color: #A8CA27;
+}
+
+.orders .tab-order:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 50%;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 0;
+    background-color: #A8CA27;
+}
+
+.orders .tab-order.active {
+    font-weight: 600;
+}
+
+.orders .tab-order:hover {
+    font-weight: 600;
+}
+
+.content-body-cart {
+    margin-top: 0!important;
+}

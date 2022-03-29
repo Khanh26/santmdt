@@ -27,7 +27,7 @@
                 <ul class="breadcrumb-main">
                     <li class="item-breadcrumb"><a href="http://localhost/santmdt/">Trang chủ</a></li>
                     <li class="item-breadcrumb"><i class="fas fa-angle-double-right"></i></li>
-                    <li class="item-breadcrumb">Thông tin cá nhân</li>
+                    <li class="item-breadcrumb">Đơn hàng của tôi</li>
                 </ul>
             </div>
             <hr>
@@ -39,7 +39,7 @@
                 <!-- chung css với cart nên tao để như vậy -->
                 <div class="body-member">
                     <div class="header-cart">
-                        <h4 class="heading-cart heading-content">Đơn hàng</h4>
+                        <h4 class="heading-cart heading-content">Đơn hàng của tôi</h4>
                     </div>
                     <div class="body-order">
                         <div class="order">
@@ -52,7 +52,7 @@
 
                             <div class="orders">
                                 <div class="tabs-order">
-                                    <button class="tab-order">Đang chờ</button>
+                                    <button class="tab-order active">Đang chờ</button>
                                     <button class="tab-order">Đang đóng gói</button>
                                     <button class="tab-order">Đang vận chuyện</button>
                                     <button class="tab-order">Đã nhận hàng</button>
@@ -71,6 +71,7 @@
 
                                         </div>
                                     </div>
+                                    <hr>
                                     <div class="content-body-cart">
                                         <div class="item-cart">
                                             <div class="choose-all-product item-cart-heading">
