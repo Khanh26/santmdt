@@ -37,15 +37,13 @@
             </div>
         </div>
         <div id="he4-2">
-            <i class="fas fa-user icon-header"></i>
-            
             <?php 
                 require __DIR__.'../../../../modules/model/Accounts.php';
                 $account =  new Accounts();
                 if($account->isLogin()) {
             ?>
             <div id="a2">
-                <a href="" class="link-header">Nguyễn Triệu Duy <i class="fas fa-caret-down"></i></a>
+                <a href="" class="link-header"><i class="fas fa-user icon-header"></i> <?php $account->getUsernameBySession(); ?> <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown-header">
                     <li><a href="http://localhost/santmdt/thongtintaikhoan" class="link-header">Thông tin tài khoản</a></li>
                     <li><a href="" class="link-header">Đổi mật khẩu</a></li>

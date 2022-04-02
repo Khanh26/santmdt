@@ -162,6 +162,8 @@ a {
 
 #a2 {
     position: relative;
+    min-width: 153px;
+    text-align: center;
 }
 
 #he2 a:hover {
