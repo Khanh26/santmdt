@@ -26,6 +26,9 @@ SET time_zone = "+00:00";
 --
 -- Cấu trúc bảng cho bảng `admin`
 --
+CREATE DATABASE IF NOT EXISTS santmdt;
+
+USE santmdt;
 
 CREATE TABLE `admin` (
   `ID_ADMIN` int(11) NOT NULL,
@@ -224,6 +227,7 @@ CREATE TABLE `khach_hang` (
   `HOTEN_KH` varchar(30) DEFAULT NULL,
   `NGAYSINH` date DEFAULT NULL,
   `GIOITINH` varchar(4) DEFAULT NULL,
+  `DIACHI_KH` varchar(12) DEFAULT NULL,
   `SDT` varchar(10) DEFAULT NULL,
   `EMAIL` varchar(60) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -806,7 +810,7 @@ ALTER TABLE `danh_gia`
   ADD CONSTRAINT `FK_DANH_GIA_CO_DANH_G_KHACH_HA` FOREIGN KEY (`ID_KH`) REFERENCES `khach_hang` (`ID_KH`),
   ADD CONSTRAINT `FK_DANH_GIA_DUOC_DANH_SAN_PHAM` FOREIGN KEY (`ID_SP`) REFERENCES `san_pham` (`ID_SP`);
 
---
+--  
 -- Các ràng buộc cho bảng `don_hang`
 --
 ALTER TABLE `don_hang`

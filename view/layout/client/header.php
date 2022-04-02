@@ -38,18 +38,28 @@
         </div>
         <div id="he4-2">
             <i class="fas fa-user icon-header"></i>
-            <!-- <div id="a2">
-                <a href="http://localhost/santmdt/dangnhap" class="link-header">Đăng nhập</a><b>/</b>
-                <a href="http://localhost/santmdt/dangky" class="link-header">Đăng ký</a>
-            </div> -->
+            
+            <?php 
+                require __DIR__.'../../../../modules/model/Accounts.php';
+                $account =  new Accounts();
+                if($account->isLogin()) {
+            ?>
             <div id="a2">
                 <a href="" class="link-header">Nguyễn Triệu Duy <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown-header">
                     <li><a href="http://localhost/santmdt/thongtintaikhoan" class="link-header">Thông tin tài khoản</a></li>
                     <li><a href="" class="link-header">Đổi mật khẩu</a></li>
-                    <li><a href="" class="link-header">Đăng xuất</a></li>
+                    <li><a href="http://localhost/santmdt/dangnhap?route=logout" class="link-header">Đăng xuất</a></li>
                 </ul>
             </div>
+            
+            <?php } else {?>
+                <div id="a2">
+                <a href="http://localhost/santmdt/dangnhap" class="link-header d-inline">Đăng nhập</a><b>/</b>
+                <a href="http://localhost/santmdt/dangky" class="link-header d-inline">Đăng ký</a>
+            </div>
+
+            <?php } ?>
         </div>
     </div>
 </div>
