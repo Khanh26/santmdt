@@ -53,6 +53,7 @@
             
             <?php } else {?>
                 <div id="a2">
+                <i class="fas fa-user icon-header"></i>
                 <a href="http://localhost/santmdt/dangnhap" class="link-header d-inline">Đăng nhập</a><b>/</b>
                 <a href="http://localhost/santmdt/dangky" class="link-header d-inline">Đăng ký</a>
             </div>

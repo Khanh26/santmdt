@@ -32,7 +32,6 @@ USE santmdt;
 
 CREATE TABLE `admin` (
   `ID_ADMIN` int(11) NOT NULL,
-  `XA_PHUONG` varchar(50) NOT NULL,
   `TEN_DANG_NHAP` varchar(50) NOT NULL,
   `HOTEN_ADMIN` varchar(1024) DEFAULT NULL,
   `NGAYSINH_ADMIN` date DEFAULT NULL,
@@ -222,12 +221,10 @@ CREATE TABLE `giohang` (
 
 CREATE TABLE `khach_hang` (
   `ID_KH` int(11) NOT NULL,
-  `XA_PHUONG` varchar(50) NOT NULL,
   `TEN_DANG_NHAP` varchar(50) NOT NULL,
   `HOTEN_KH` varchar(30) DEFAULT NULL,
   `NGAYSINH` date DEFAULT NULL,
   `GIOITINH` varchar(4) DEFAULT NULL,
-  `DIACHI_KH` varchar(12) DEFAULT NULL,
   `SDT` varchar(10) DEFAULT NULL,
   `EMAIL` varchar(60) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -300,11 +297,9 @@ CREATE TABLE `nhabanle_thamgia` (
 
 CREATE TABLE `nha_ban_le` (
   `ID_NBL` int(11) NOT NULL,
-  `XA_PHUONG` varchar(50) NOT NULL,
   `TEN_DANG_NHAP` varchar(50) NOT NULL,
   `TEN_NBL` varchar(1024) DEFAULT NULL,
   `NGAYTHAMGIA` date DEFAULT NULL,
-  `DIACHI` varchar(1024) DEFAULT NULL,
   `AVATAR_NBL` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -402,6 +397,13 @@ CREATE TABLE `chitietyeuthich` (
   `ID_SP` int(11) NOT NULL,
   `NGAY_THEM_SP_YT` datetime DEFAULT NOW()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE `dia_chi` (
+  `ID_DIACHI` int(11) NOT NULL,
+  `ND_DIACHI` varchar(50) NOT NULL,
+  `ID_KH` int(11) NOT NULL,
+  `XA_PHUONG` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 --
 -- Chỉ mục cho các bảng đã đổ
 --
@@ -411,8 +413,7 @@ CREATE TABLE `chitietyeuthich` (
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`ID_ADMIN`),
-  ADD KEY `FK_ADMIN_CO_TAI_KH_TAIKHOAN` (`TEN_DANG_NHAP`),
-  ADD KEY `FK_ADMIN_RELATIONS_XA_PHUON` (`XA_PHUONG`);
+  ADD KEY `FK_ADMIN_CO_TAI_KH_TAIKHOAN` (`TEN_DANG_NHAP`);
 
 --
 -- Chỉ mục cho bảng `anh_sp`
@@ -516,7 +517,6 @@ ALTER TABLE `giohang`
 --
 ALTER TABLE `khach_hang`
   ADD PRIMARY KEY (`ID_KH`),
-  ADD KEY `FK_KHACH_HA_CO_DIA_CH_XA_PHUON` (`XA_PHUONG`),
   ADD KEY `FK_KHACH_HA_CO_TAI_KH_TAIKHOAN` (`TEN_DANG_NHAP`);
 
 --
@@ -555,8 +555,7 @@ ALTER TABLE `nhabanle_thamgia`
 --
 ALTER TABLE `nha_ban_le`
   ADD PRIMARY KEY (`ID_NBL`),
-  ADD KEY `FK_NHA_BAN__CO_TAI_KH_TAIKHOAN` (`TEN_DANG_NHAP`),
-  ADD KEY `FK_NHA_BAN__CO_TRU_SO_XA_PHUON` (`XA_PHUONG`);
+  ADD KEY `FK_NHA_BAN__CO_TAI_KH_TAIKHOAN` (`TEN_DANG_NHAP`);
 
 --
 -- Chỉ mục cho bảng `quangcao`
@@ -597,6 +596,7 @@ ALTER TABLE `tinh_tp`
 --
 -- Chỉ mục cho bảng `xa_phuong`
 --
+
 ALTER TABLE `xa_phuong`
   ADD PRIMARY KEY (`XA_PHUONG`),
   ADD KEY `FK_XA_PHUON_THUOC_QUAN_HUY` (`QUAN_HUYEN`);
@@ -609,6 +609,10 @@ ALTER TABLE `chitietyeuthich`
   ADD PRIMARY KEY (`ID_SP`,`ID_YEUTHICH`),
   ADD KEY `FK_CHITIETYEUTHICH_SANPHAM` (`ID_YEUTHICH`);
 
+ALTER TABLE `dia_chi`
+  ADD PRIMARY KEY (`ID_DIACHI`),
+  ADD KEY `FK_DIA_CHI_RELATIONS_XA_PHUON` (`XA_PHUONG`),
+  ADD KEY `FK_DIA_CHI_RELATIONS_khach_hang` (`ID_KH`);
 
 --
 -- AUTO_INCREMENT cho các bảng đã đổ
@@ -737,6 +741,9 @@ ALTER TABLE `san_pham`
 
 ALTER TABLE `yeuthich`
   MODIFY `ID_YEUTHICH` int(11) NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `dia_chi`
+  MODIFY `ID_DIACHI` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- Các ràng buộc cho các bảng đã đổ
 --
@@ -745,8 +752,7 @@ ALTER TABLE `yeuthich`
 -- Các ràng buộc cho bảng `admin`
 --
 ALTER TABLE `admin`
-  ADD CONSTRAINT `FK_ADMIN_CO_TAI_KH_TAIKHOAN` FOREIGN KEY (`TEN_DANG_NHAP`) REFERENCES `taikhoan` (`TEN_DANG_NHAP`),
-  ADD CONSTRAINT `FK_ADMIN_RELATIONS_XA_PHUON` FOREIGN KEY (`XA_PHUONG`) REFERENCES `xa_phuong` (`XA_PHUONG`);
+  ADD CONSTRAINT `FK_ADMIN_CO_TAI_KH_TAIKHOAN` FOREIGN KEY (`TEN_DANG_NHAP`) REFERENCES `taikhoan` (`TEN_DANG_NHAP`);
 
 --
 -- Các ràng buộc cho bảng `anh_sp`
@@ -826,7 +832,6 @@ ALTER TABLE `gia`
 -- Các ràng buộc cho bảng `khach_hang`
 --
 ALTER TABLE `khach_hang`
-  ADD CONSTRAINT `FK_KHACH_HA_CO_DIA_CH_XA_PHUON` FOREIGN KEY (`XA_PHUONG`) REFERENCES `xa_phuong` (`XA_PHUONG`),
   ADD CONSTRAINT `FK_KHACH_HA_CO_TAI_KH_TAIKHOAN` FOREIGN KEY (`TEN_DANG_NHAP`) REFERENCES `taikhoan` (`TEN_DANG_NHAP`);
 
 
@@ -844,8 +849,7 @@ ALTER TABLE `nhabanle_thamgia`
 -- Các ràng buộc cho bảng `nha_ban_le`
 --
 ALTER TABLE `nha_ban_le`
-  ADD CONSTRAINT `FK_NHA_BAN__CO_TAI_KH_TAIKHOAN` FOREIGN KEY (`TEN_DANG_NHAP`) REFERENCES `taikhoan` (`TEN_DANG_NHAP`),
-  ADD CONSTRAINT `FK_NHA_BAN__CO_TRU_SO_XA_PHUON` FOREIGN KEY (`XA_PHUONG`) REFERENCES `xa_phuong` (`XA_PHUONG`);
+  ADD CONSTRAINT `FK_NHA_BAN__CO_TAI_KH_TAIKHOAN` FOREIGN KEY (`TEN_DANG_NHAP`) REFERENCES `taikhoan` (`TEN_DANG_NHAP`);
 
 --
 -- Các ràng buộc cho bảng `quangcao`
@@ -875,6 +879,11 @@ ALTER TABLE `chitietyeuthich`
   ADD CONSTRAINT `FK_CHITIETYEUTHICH_YEUTHICH` FOREIGN KEY (`ID_YEUTHICH`) REFERENCES `yeuthich` (`ID_YEUTHICH`),
   ADD CONSTRAINT `FK_CHITIETYEUTHICH_SANPHAM` FOREIGN KEY (`ID_SP`) REFERENCES `san_pham` (`ID_SP`);
 
+
+ALTER TABLE `dia_chi`
+  ADD CONSTRAINT `FK_diachi_xa_phuong` FOREIGN KEY (`XA_PHUONG`) REFERENCES `xa_phuong` (`XA_PHUONG`),
+  ADD CONSTRAINT `FK_diachi_khach_hang` FOREIGN KEY (`ID_KH`) REFERENCES `khach_hang` (`ID_KH`);
+
 --
 -- Các ràng buộc cho bảng `xa_phuong`
 --
@@ -885,3 +894,7 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+INSERT INTO `taikhoan`(`TEN_DANG_NHAP`, `MATKHAU`) VALUES ('khanh1','123');
+INSERT INTO `taikhoan`(`TEN_DANG_NHAP`, `MATKHAU`) VALUES ('khanh2','123');
+INSERT INTO `taikhoan`(`TEN_DANG_NHAP`, `MATKHAU`) VALUES ('khanh3','123');

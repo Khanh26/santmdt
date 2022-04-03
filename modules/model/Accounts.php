@@ -9,7 +9,6 @@ class Accounts extends dbConnect
         $stmt = $this->connect()->prepare('SELECT * FROM `taikhoan`');
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
         if ($stmt->execute()) {
-            echo $stmt->execute();
             return $stmt->fetchAll();
         } else {
             // page error
@@ -20,6 +19,16 @@ class Accounts extends dbConnect
     {
         echo $_SESSION['user']['TEN_DANG_NHAP'];
 
+    }
+
+    public function addAccount($username, $password) {
+        $stmt = $this->connect()->prepare('INSERT INTO `taikhoan`(`TEN_DANG_NHAP`, `MATKHAU`) VALUES (?,?)');
+        $stmt->setFetchMode(PDO::FETCH_ASSOC);
+        if ($stmt->execute(array($username,$password))) {
+            echo 'success';
+        } else {
+            echo 'error' ;
+        }
     }
 
     public function login($ten_dang_nhap, $matkhau)
@@ -35,6 +44,8 @@ class Accounts extends dbConnect
             $stmt->setFetchMode(PDO::FETCH_ASSOC);
             $_SESSION['user'] = $stmt->fetch();
             header('location: ' . $this->baseSite());
+        } else {
+            return 'Tên đăng nhập hoặc mật khẩu không đúng';
         }
     }
 
@@ -53,4 +64,6 @@ class Accounts extends dbConnect
             return true;
         return false;
     }
+
+
 }

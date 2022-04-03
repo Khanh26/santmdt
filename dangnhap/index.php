@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '../../modules/model/Accounts.php';
 $account = new Accounts();
-
+$result = null;
 // logout
 if (isset($_GET['route']) && $_GET['route'] == 'logout') {
     $account->logout();
@@ -12,7 +12,7 @@ if (isset($_GET['route']) && $_GET['route'] == 'logout') {
     }
 
     if (isset($_POST['submitLogin'])) {
-        $account->login($_POST['username'], $_POST['password']);
+        $result = $account->login($_POST['username'], $_POST['password']);
     }
 }
 
@@ -48,6 +48,7 @@ if (isset($_GET['route']) && $_GET['route'] == 'logout') {
         <h1>Đăng nhập</h1>
         <div class="main-agileinfo">
             <div class="agileits-top">
+                <?php echo $result != null ? '<h2 class="message">'.$result.'</h2>' : '' ?>
                 <form action="" method="post">
                     <input class="text inputUsername" type="text" name="username" placeholder="Tên đăng nhập" required>
                     <input class="text" type="password" name="password" placeholder="Mật khẩu" required>
