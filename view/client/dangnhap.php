@@ -1,21 +1,16 @@
 <?php
-require_once __DIR__ . '../../modules/model/Accounts.php';
+require_once __DIR__ . '../../../modules/model/Accounts.php';
 $account = new Accounts();
 $result = null;
-// logout
-if (isset($_GET['route']) && $_GET['route'] == 'logout') {
-    $account->logout();
-} else {
-    // check login
-    if ($account->isLogin()) {
-        header('location: '.$account->baseSite());
-    }
 
-    if (isset($_POST['submitLogin'])) {
-        $result = $account->login($_POST['username'], $_POST['password']);
-    }
+// check login
+if ($account->isLogin()) {
+    header('location: ' . $account->baseSite());
 }
 
+if (isset($_POST['submitLogin'])) {
+    $result = $account->login($_POST['username'], $_POST['password']);
+}
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +30,7 @@ if (isset($_GET['route']) && $_GET['route'] == 'logout') {
         }
     </script>
     <!-- Custom Theme files -->
-    <link href="http://localhost/santmdt/assets/css/dangky.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="http://localhost/santmdt/public/css/dangky.css" rel="stylesheet" type="text/css" media="all" />
     <!-- //Custom Theme files -->
     <!-- web font -->
     <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
@@ -48,7 +43,7 @@ if (isset($_GET['route']) && $_GET['route'] == 'logout') {
         <h1>Đăng nhập</h1>
         <div class="main-agileinfo">
             <div class="agileits-top">
-                <?php echo $result != null ? '<h2 class="message">'.$result.'</h2>' : '' ?>
+                <?php echo $result != null ? '<h2 class="message">' . $result . '</h2>' : '' ?>
                 <form action="" method="post">
                     <input class="text inputUsername" type="text" name="username" placeholder="Tên đăng nhập" required>
                     <input class="text" type="password" name="password" placeholder="Mật khẩu" required>

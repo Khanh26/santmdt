@@ -2,10 +2,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="http://localhost/santmdt/assets/img/logo1.png">
+    <link rel="icon" type="image/x-icon" href="http://localhost/santmdt/public/img/logo1.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://localhost/santmdt/assets/css/layouts.css">
-    <link rel="stylesheet" href="http://localhost/santmdt/assets/css/tintuc.css">
+    <link rel="stylesheet" href="http://localhost/santmdt/public/css/layouts.css">
+    <link rel="stylesheet" href="http://localhost/santmdt/public/css/tintuc.css">
     <title>Trang chủ - Sàn Thương mại số 1 Việt Nam</title>
 </head>
 
@@ -90,7 +90,6 @@
 .danhmuc{
     text-align: center;
     font-size: 25px;
-    background-color: ;
     height: auto;
 }
 
@@ -105,7 +104,7 @@
 <body>
 <div class="wapper">
     <!-- header -->
-    <?php include('../view/layout/client/header.php'); ?>
+    <?php include('./view/client/layout/header.php'); ?>
     <!-- End header -->
         <br>
         <div class="sidebar-baiviet">
@@ -185,7 +184,7 @@
                         <br>
                         <h2><center>QUY TRÌNH TRỒNG VÀ CHẮM SÓC CÂY MAI ĐÚNG KỸ THUẬT</center></h2>
                     </a>
-                    <img class="baiviet-img" src="http://localhost/santmdt/assets/img/hoa-mai-vang.jpg" alt="">
+                    <img class="baiviet-img" src="http://localhost/santmdt/public/img/hoa-mai-vang.jpg" alt="">
                     <p class="the_p">Mai có xuất xứ từ cây hoang dại, có khả năng thích ứng tốt với điều kiện khí hậu nhiệt đới,
                         đặc biệt với khí hậu miền Nam. Cây mai sinh trưởng và phát triển mạnh,
                         có tuổi thọ cao và nếu được chăm sóc chu đáo sẽ cho hoa nhiều và có màu sắc đẹp.
@@ -220,7 +219,7 @@
                         <br>
                         <h2><center>QUY TRÌNH TRỒNG VÀ CHẮM SÓC CÂY CÀ PHÊ ĐÚNG KỸ THUẬT</center></h2>
                     </a>
-                    <img class="baiviet-img" src="http://localhost/santmdt/assets/img/ky_thuat_trong_ca_phe.jpg" alt="">
+                    <img class="baiviet-img" src="http://localhost/santmdt/public/img/ky_thuat_trong_ca_phe.jpg" alt="">
                     <p class="the_p">Giới thiệu quy trình kỹ thuật trồng cà phê, hướng dẫn chăm sóc cây cà phê cho năng suất cao và ổn định. 
             Ngoài việc lựa chọn giống cà phê đạt tiêu chuẩn, có xuất xứ rõ ràng, 
             thì kỹ thuật trồng cũng quyết định không nhỏ đến sinh trưởng và năng suất của vườn cà phê. 
@@ -253,7 +252,7 @@
                         <br>
                         <h2><center>GIỚI THIỆU QUY TRÌNH TRỒNG XOÀI, CHĂM SÓC CÂY XOÀI</center></h2>
                     </a>
-                    <img class="baiviet-img" src="http://localhost/santmdt/assets/img/cay-xoai-6.jpg" alt="">
+                    <img class="baiviet-img" src="http://localhost/santmdt/public/img/cay-xoai-6.jpg" alt="">
                     <p class="the_p">Giới thiệu quy trình kỹ thuật trồng cà phê, hướng dẫn chăm sóc cây cà phê cho năng suất cao và ổn định.
                         Ngoài việc lựa chọn giống cà phê đạt tiêu chuẩn, có xuất xứ rõ ràng, thì kỹ thuật trồng cũng quyết định không nhỏ đến sinh trưởng và năng suất của vườn cà phê.
                         <br>
@@ -284,7 +283,7 @@
         </div>
 
     <!-- footer -->
-    <?php include('../view/layout/client/footer.php'); ?>
+    <?php include('./view/client/layout/footer.php'); ?>
     <!-- End footer -->
 </div>
 </body>

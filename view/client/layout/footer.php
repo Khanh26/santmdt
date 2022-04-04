@@ -14,7 +14,7 @@
                 <a href="" class="link-footer social-footer" title="instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <img class="img-validate-footer" src="http://localhost/santmdt/assets/img/footer/dkbct.png" alt="">
+                <img class="img-validate-footer" src="http://localhost/santmdt/public/img/footer/dkbct.png" alt="">
         </div>
 
         <div class="item-footer">

@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html>
 
@@ -15,7 +19,7 @@
         }
     </script>
     <!-- Custom Theme files -->
-    <link href="http://localhost/santmdt/assets/css/dangky.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="http://localhost/santmdt/public/css/dangky.css" rel="stylesheet" type="text/css" media="all" />
     <!-- //Custom Theme files -->
     <!-- web font -->
     <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
@@ -28,7 +32,7 @@
         <h1>Đăng ký tài khoản</h1>
         <div class="main-agileinfo">
             <div class="agileits-top">
-                <form action="http://localhost/santmdt/modules/api/dangky.php" method="POST">
+                <form action="" method="POST">
                     <select name="role" id="role">
                         <option value="">Bạn đăng ký để trở thành...</option>
                         <option value="">Khách hàng</option>
@@ -47,7 +51,7 @@
                         </label>
                         <div class="clear"> </div>
                     </div>
-                    <input type="submit" value="ĐĂNG KÝ">
+                    <input type="submit" name="btnSubmit" value="ĐĂNG KÝ">
                 </form>
                 <p>Bạn đã có tài khoản? <a href="http://localhost/santmdt/dangnhap"> Đăng nhập ngay!</a></p>
             </div>

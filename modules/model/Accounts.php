@@ -18,7 +18,22 @@ class Accounts extends dbConnect
     public function getUsernameBySession()
     {
         echo $_SESSION['user']['TEN_DANG_NHAP'];
+    }
 
+    public function isUsernameExist($username) {
+        $stmt = $this->connect()->prepare('SELECT TEN_DANG_NHAP FROM `taikhoan` WHERE TEN_DANG_NHAP=?');
+        $stmt->setFetchMode(PDO::FETCH_ASSOC);
+        if (!$stmt->execute(array($username))) {
+            $stmt = null;
+            exit();
+        }
+        if ($stmt->rowCount() > 0) {
+            header('Content/type: application/json');
+            echo json_encode(['message'=>true]);
+        } else {
+            header('Content/type: application/json');
+            echo json_encode(['message'=>false]);
+        }
     }
 
     public function addAccount($username, $password) {
@@ -31,17 +46,16 @@ class Accounts extends dbConnect
         }
     }
 
-    public function login($ten_dang_nhap, $matkhau)
+    public function login($username, $password)
     {
         $stmt = $this->connect()->prepare('SELECT * FROM `taikhoan` WHERE TEN_DANG_NHAP=? AND MATKHAU=?');
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
-        if (!$stmt->execute(array($ten_dang_nhap, $matkhau))) {
+        if (!$stmt->execute(array($username, $password))) {
             $stmt = null;
             exit();
         }
         if ($stmt->rowCount() > 0) {
             session_start();
-            $stmt->setFetchMode(PDO::FETCH_ASSOC);
             $_SESSION['user'] = $stmt->fetch();
             header('location: ' . $this->baseSite());
         } else {
@@ -64,6 +78,5 @@ class Accounts extends dbConnect
             return true;
         return false;
     }
-
-
 }
+

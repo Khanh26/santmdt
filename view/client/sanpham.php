@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://localhost/santmdt/assets/css/layouts.css">
-    <link rel="stylesheet" href="http://localhost/santmdt/assets/css/sanpham.css">
+    <link rel="stylesheet" href="http://localhost/santmdt/public/css/layouts.css">
+    <link rel="stylesheet" href="http://localhost/santmdt/public/css/sanpham.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet"> 
@@ -17,7 +17,7 @@
 <body>
     <div class="wapper">
         <!-- header -->
-        <?php include('../view/layout/client/header.php'); ?>
+        <?php include('./view/client/layout/header.php'); ?>
         <!-- End header -->
 
         <!-- Content -->
@@ -30,7 +30,7 @@
            </div>
 
            <br>
-           <b><hr style ="size = 2px;"></b>
+           <b><hr style ="size : 2px;"></b>
            
            <div class="category">
            
@@ -51,7 +51,7 @@
                 <div class="blog1">
                     <article class="con5-2-1">
                             <a class="thea" href=""><h4>GIỚI THIỆU QUY TRÌNH TRỒNG XOÀI, HƯỚNG DẪN CHĂM SÓC CÂY XOÀI</h4></a>
-                            <img class="theimg" src="http://localhost/santmdt/assets/img/cay-xoai-6.jpg" alt="">
+                            <img class="theimg" src="http://localhost/santmdt/public/img/cay-xoai-6.jpg" alt="">
                             <p class="thep">Giới thiệu quy trình kỹ thuật trồng cà phê, hướng dẫn chăm sóc cây cà phê cho năng suất cao và ổn định. 
                                 <!-- Ngoài việc lựa chọn giống cà phê đạt tiêu chuẩn, có xuất xứ rõ ràng, thì kỹ thuật trồng cũng quyết định không nhỏ đến sinh trưởng và năng suất của vườn cà phê.  -->
                             </p>
@@ -60,7 +60,7 @@
                 <div class="blog1">
                     <article class="con5-2-1">
                                 <a class="thea" href=""><h4>GIỚI THIỆU QUY TRÌNH TRỒNG XOÀI, HƯỚNG DẪN CHĂM SÓC CÂY XOÀI</h4></a>
-                                <img class="theimg" src="http://localhost/santmdt/assets/img/cay-xoai-6.jpg" alt="">
+                                <img class="theimg" src="http://localhost/santmdt/public/img/cay-xoai-6.jpg" alt="">
                                 <p class="thep">Giới thiệu quy trình kỹ thuật trồng cà phê, hướng dẫn chăm sóc cây cà phê cho năng suất cao và ổn định. 
                                     <!-- Ngoài việc lựa chọn giống cà phê đạt tiêu chuẩn, có xuất xứ rõ ràng, thì kỹ thuật trồng cũng quyết định không nhỏ đến sinh trưởng và năng suất của vườn cà phê.  -->
                                 </p>
@@ -69,7 +69,7 @@
                 <div class="blog1">
                     <article class="con5-2-1">
                             <a class="thea" href=""><h4>GIỚI THIỆU QUY TRÌNH TRỒNG XOÀI, HƯỚNG DẪN CHĂM SÓC CÂY XOÀI</h4></a>
-                            <img class="theimg" src="http://localhost/santmdt/assets/img/cay-xoai-6.jpg" alt="">
+                            <img class="theimg" src="http://localhost/santmdt/public/img/cay-xoai-6.jpg" alt="">
                             <p class="thep">Giới thiệu quy trình kỹ thuật trồng cà phê, hướng dẫn chăm sóc cây cà phê cho năng suất cao và ổn định. 
                                 <!-- Ngoài việc lựa chọn giống cà phê đạt tiêu chuẩn, có xuất xứ rõ ràng, thì kỹ thuật trồng cũng quyết định không nhỏ đến sinh trưởng và năng suất của vườn cà phê.  -->
                             </p>
@@ -180,7 +180,7 @@
         <!-- End content -->
 
         <!-- footer -->
-        <?php include('../view/layout/client/footer.php');?>
+        <?php include('./view/client/layout/footer.php'); ?>
         <!-- End footer -->
     </div>
     

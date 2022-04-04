@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://localhost/santmdt/assets/css/layouts.css">
-    <link rel="stylesheet" href="http://localhost/santmdt/assets/css/sanpham.css">
-    <link rel="stylesheet" href="http://localhost/santmdt/assets/css/chitietsp.css">
+    <link rel="stylesheet" href="http://localhost/santmdt/public/css/layouts.css">
+    <link rel="stylesheet" href="http://localhost/santmdt/public/css/sanpham.css">
+    <link rel="stylesheet" href="http://localhost/santmdt/public/css/chitietsp.css">
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/public/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/public/owl.theme.default.min.css">
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
@@ -26,7 +26,7 @@
 <body>
     <div class="wapper">
         <!-- header -->
-        <?php include('../view/layout/client/header.php'); ?>
+        <?php include('./view/client/layout/header.php'); ?>
         <!-- End header -->
 
         <!-- Content -->
@@ -207,7 +207,7 @@
         <!-- End content -->
 
         <!-- footer -->
-        <?php include('../view/layout/client/footer.php');?>
+        <?php include('./view/client/layout/footer.php'); ?>
         <!-- End footer -->
     </div>
     
