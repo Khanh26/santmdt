@@ -1,5 +1,5 @@
 # Cấu trúc file
-File index.php không ai được chỉnh sửa.
+Các File index.php, Route.php,dbConnect không ai được chỉnh sửa.
 1. View</br>
 - Các file giao diện</br>
 - Code giao diện này ở đây</br>
