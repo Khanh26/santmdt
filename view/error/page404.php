@@ -8,6 +8,6 @@
     <title>404</title>
 </head>
 <body>
-    Not Found!
+    Not Found! - Sai tên router hoặc file view.
 </body>
 </html>
