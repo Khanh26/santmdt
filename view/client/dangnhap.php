@@ -9,7 +9,7 @@ if ($account->isLogin()) {
 }
 
 if (isset($_POST['submitLogin'])) {
-    $result = $account->login($_POST['username'], $_POST['password']);
+    $result = $account->login($_POST['username'], md5($_POST['password']));
 }
 ?>
 
@@ -53,7 +53,7 @@ if (isset($_POST['submitLogin'])) {
                     <input type="submit" name="submitLogin" value="ĐĂNG NHẬP">
                 </form>
                 <a class="backHome" href="http://localhost/santmdt">Tiếp tục mua sắm</a>
-                <p>Bạn đã có tài khoản? <a href="http://localhost/santmdt/dangky"> Đăng ký</a></p>
+                <p>Bạn đã có tài khoản? <a href="http://localhost/santmdt/?router=dangky"> Đăng ký</a></p>
             </div>
         </div>
     </div>

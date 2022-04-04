@@ -9,10 +9,13 @@ class Accounts extends dbConnect
         $stmt = $this->connect()->prepare('SELECT * FROM `taikhoan`');
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
         if ($stmt->execute()) {
-            return $stmt->fetchAll();
+            // header('Content/type: application/json');
+            return json_encode($stmt->fetchAll());
         } else {
             // page error
         }
+
+        $stmt = null;
     }
 
     public function getUsernameBySession()
@@ -20,7 +23,8 @@ class Accounts extends dbConnect
         echo $_SESSION['user']['TEN_DANG_NHAP'];
     }
 
-    public function isUsernameExist($username) {
+    public function isUsernameExist($username)
+    {
         $stmt = $this->connect()->prepare('SELECT TEN_DANG_NHAP FROM `taikhoan` WHERE TEN_DANG_NHAP=?');
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
         if (!$stmt->execute(array($username))) {
@@ -28,21 +32,23 @@ class Accounts extends dbConnect
             exit();
         }
         if ($stmt->rowCount() > 0) {
-            header('Content/type: application/json');
-            echo json_encode(['message'=>true]);
+            // header('Content/type: application/json');
+            echo json_encode(['message' => true]);
         } else {
-            header('Content/type: application/json');
-            echo json_encode(['message'=>false]);
+            // header('Content/type: application/json');
+            echo json_encode(['message' => false]);
         }
+        $stmt = null;
     }
 
-    public function addAccount($username, $password) {
+    public function addAccount($username, $password)
+    {
         $stmt = $this->connect()->prepare('INSERT INTO `taikhoan`(`TEN_DANG_NHAP`, `MATKHAU`) VALUES (?,?)');
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
-        if ($stmt->execute(array($username,$password))) {
-            echo 'success';
+        if ($stmt->execute(array($username, $password))) {
+            return true;
         } else {
-            echo 'error' ;
+            return false;
         }
     }
 
@@ -57,10 +63,13 @@ class Accounts extends dbConnect
         if ($stmt->rowCount() > 0) {
             session_start();
             $_SESSION['user'] = $stmt->fetch();
+            $stmt = null;
             header('location: ' . $this->baseSite());
         } else {
+            $stmt = null;
             return 'Tên đăng nhập hoặc mật khẩu không đúng';
         }
+        
     }
 
     public function logout()
@@ -80,3 +89,5 @@ class Accounts extends dbConnect
     }
 }
 
+// $account = new Accounts();
+// $account->getAllAccount();
