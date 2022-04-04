@@ -7,7 +7,7 @@ File index.php không ai được chỉnh sửa.
 - Tạo đường dẫn tới view ở file configRoute</br>
 - VD: $route->add('a','b.php');</br>
 - Với a ở đây là tên router và b là tên file giao diện.</br>
-- Trên truy cấp tới trang này trên url: http://localhost/santmdt/?router=a
+- Trên truy cập tới trang này trên url: http://localhost/santmdt/?router=a
 3. Public</br>
 - file này chứa css, img, js, plugins</br>
 - URL: http://localhost/santmdt/public/...</br>
