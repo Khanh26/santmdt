@@ -15,4 +15,5 @@ Các File index.php, Route.php,dbConnect không ai được chỉnh sửa.
 - Viết các class để truy vấn Database
 - folder API để return data JSON
 5. Database</br>
--	Connect tới DB và script DB
+- Connect tới DB và script DB
+- Lưu ý: Import file script vào là dc ko cần tạo DB mới (Trong đó đã có sẳn TK khanh1, khanh2, khanh3, khanh4 và MK: 123) MK chưa mã hóa. 
