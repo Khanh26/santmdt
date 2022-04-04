@@ -17,14 +17,14 @@
     <div class="body-sidebar">
         <ul class="nav-sidebar">
             <li class="item-sidebar">
-                <a href="http://localhost/santmdt/?router=thongtintaikhoan" class="item-link-sidebar ">
+                <a href="http://localhost/santmdt/?router=thongtintaikhoan" class="item-link-sidebar <?php echo $_GET['router'] == 'thongtintaikhoan' ? 'active' : '' ?>">
                 <i class="fas fa-user icon-sidebar"></i>Thông tin tài khoản</a>
             </li>
             <li class="item-sidebar">
-                <a href="http://localhost/santmdt/?router=donhang" class="item-link-sidebar "><i class="fas fa-box icon-sidebar"></i>Đơn hàng của tôi</a>
+                <a href="http://localhost/santmdt/?router=donhang" class="item-link-sidebar <?php echo $_GET['router'] == 'donhang' ? 'active' : '' ?>"><i class="fas fa-box icon-sidebar"></i>Đơn hàng của tôi</a>
             </li>
             <li class="item-sidebar">
-                <a href="http://localhost/santmdt/?router=yeuthich" class="item-link-sidebar ">
+                <a href="http://localhost/santmdt/?router=yeuthich" class="item-link-sidebar <?php echo $_GET['router'] == 'yeuthich' ? 'active' : '' ?>">
                 <i class="fas fa-heart icon-sidebar"></i>Sản phẩm yêu thích</a>
             </li>
         </ul>
