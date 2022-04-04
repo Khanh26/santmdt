@@ -1,3 +1,4 @@
+<!-- Trang hiện khi ko tìm thấy trang web -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
