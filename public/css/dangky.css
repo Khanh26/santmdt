@@ -877,8 +877,7 @@ input.checkbox:checked:after {
     margin-bottom: 2em;
 }
 
-.inputName,
-#username {
+.inputName {
     margin-top: 2em;
 }
 
@@ -900,6 +899,7 @@ input.checkbox:checked:after {
 #role {
     width: 100%;
     margin: 0;
+    margin-bottom: 2em;
 }
 
 #role option {

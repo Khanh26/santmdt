@@ -9,7 +9,7 @@ if ($account->isLogin()) {
 }
 
 if (isset($_POST['submitLogin'])) {
-    $result = $account->login($_POST['username'], md5($_POST['password']));
+    $result = $account->login(trim($_POST['username']), md5($_POST['password']), $_POST['role']);
 }
 ?>
 
@@ -45,6 +45,10 @@ if (isset($_POST['submitLogin'])) {
             <div class="agileits-top">
                 <?php echo $result != null ? '<h2 class="message">' . $result . '</h2>' : '' ?>
                 <form action="" method="post">
+                    <select name="role" id="role">
+                        <option value="khachhang">Vai trò: Khách hàng</option>
+                        <option value="nhabanle">Vai trò: Nhà bán lẻ</option>
+                    </select>
                     <input class="text inputUsername" type="text" name="username" placeholder="Tên đăng nhập" required>
                     <input class="text" type="password" name="password" placeholder="Mật khẩu" required>
                     <div class="wthree-text">

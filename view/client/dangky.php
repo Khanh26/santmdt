@@ -37,10 +37,10 @@
 
     if (isset($_POST['btnSubmit'])) {
         $role = $_POST['role'];
-        $username = $_POST['username'];
-        $email = $_POST['email'];
-        $name = $_POST['fullname'];
-        $phone = $_POST['phone'];
+        $username = trim($_POST['username']);
+        $email = trim($_POST['email']);
+        $name = trim($_POST['fullname']);
+        $phone = trim($_POST['phone']);
         $password = md5($_POST['password']);
         if ($role == 'khachhang') {
             if ($account->addAccount($username, $password) && $member->addMember($username, $name, $phone, $email)) {
@@ -97,7 +97,7 @@
                         <option value="nhabanle">Vai trò: Nhà bán lẻ</option>
                     </select>
                     <input class="text" type="text" id="username" name="username" placeholder="Tên đăng nhập" required>
-                    <input class="text inputName" type="text" name="fullname" placeholder="Họ tên" required>
+                    <input class="text inputName" type="text" name="fullname" placeholder="Họ và tên" required>
                     <input class="text email" type="email" name="email" placeholder="Email" required>
                     <input class="text inputPhone" type="text" name="phone" placeholder="Số điện thoại" required>
                     <input class="text" type="password" name="password" placeholder="Mật khẩu" required>
@@ -111,7 +111,7 @@
                     </div>
                     <input type="submit" name="btnSubmit" class="submit" value="ĐĂNG KÝ">
                 </form>
-                <p>Bạn đã có tài khoản? <a href="http://localhost/santmdt/dangnhap"> Đăng nhập ngay!</a></p>
+                <p>Bạn đã có tài khoản? <a href="http://localhost/santmdt/?router=dangnhap"> Đăng nhập ngay!</a></p>
             </div>
         </div>
         <!-- copyright -->

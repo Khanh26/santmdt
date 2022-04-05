@@ -52,9 +52,13 @@ class Accounts extends dbConnect
         }
     }
 
-    public function login($username, $password)
+    public function login($username, $password, $role)
     {
-        $stmt = $this->connect()->prepare('SELECT * FROM `taikhoan` WHERE TEN_DANG_NHAP=? AND MATKHAU=?');
+        if($role == 'khachhang') {
+            $stmt = $this->connect()->prepare('SELECT * FROM `taikhoan` WHERE `taikhoan`.TEN_DANG_NHAP = `khachhang`.`TEN_DANG_NHAP` AND `taikhoan`.TEN_DANG_NHAP=? AND `taikhoan`.MATKHAU=?');
+        } else {
+            $stmt = $this->connect()->prepare('SELECT * FROM `taikhoan` WHERE `taikhoan`.TEN_DANG_NHAP = `nha_ban_le`.`TEN_DANG_NHAP` AND `taikhoan`.TEN_DANG_NHAP=? AND `taikhoan`.MATKHAU=?');
+        }
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
         if (!$stmt->execute(array($username, $password))) {
             $stmt = null;

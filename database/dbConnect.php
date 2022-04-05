@@ -8,7 +8,7 @@ class dbConnect
             $database = "santmdt";
             $username = "root";
             $password = "";
-            $conn = new PDO('mysql:host=' . $serverName . ';dbname=' . $database, $username, $password);
+            $conn = new PDO('mysql:host=' . $serverName . ';dbname=' . $database.';charset=utf8mb4', $username, $password);
             return $conn;
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage() . "</br>";
