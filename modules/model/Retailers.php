@@ -15,6 +15,3 @@ class Retailers extends dbConnect
         }
     }
 }
-
-// $account = new Accounts();
-// $account->getAllAccount();

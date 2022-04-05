@@ -47,7 +47,6 @@ class Route
     public function view($nameRoute)
     {
 
-
         if ($this->isExistRoute($nameRoute)) {
             if (file_exists('./view/client/'.$this->getFileViewByName($nameRoute))) {
                 include './view/client/'.$this->getFileViewByName($nameRoute);

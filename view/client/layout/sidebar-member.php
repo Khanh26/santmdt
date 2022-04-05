@@ -27,6 +27,11 @@
                 <a href="http://localhost/santmdt/?router=yeuthich" class="item-link-sidebar <?php echo $_GET['router'] == 'yeuthich' ? 'active' : '' ?>">
                 <i class="fas fa-heart icon-sidebar"></i>Sản phẩm yêu thích</a>
             </li>
+
+            <li class="item-sidebar">
+                <a href="http://localhost/santmdt/?router=sodiachi" class="item-link-sidebar <?php echo $_GET['router'] == 'sodiachi' ? 'active' : '' ?>">
+                <i class="fas fa-heart icon-sidebar"></i>Sổ địa chỉ của bạn</a>
+            </li>
         </ul>
     </div>
 </div>

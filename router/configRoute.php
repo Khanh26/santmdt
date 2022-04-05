@@ -1,13 +1,14 @@
 <?php
 require_once './router/Route.php';
 $route = new Route();
-$route->add('dangnhap','dangnhap.php','view');
-$route->add('dangxuat','dangxuat.php','view');
-$route->add('dangky','dangky.php','view');
-$route->add('giohang','giohang.php','view');
-$route->add('yeuthich','yeuthich.php','view');
-$route->add('sanpham','sanpham.php','view');
-$route->add('chitietsp','chitietsp.php','view');
-$route->add('tintuc','tintuc.php','view');
-$route->add('thongtintaikhoan','thongtintaikhoan.php','view');
-$route->add('donhang','donhang.php','view');
+$route->add('dangnhap','dangnhap.php');
+$route->add('dangxuat','dangxuat.php');
+$route->add('dangky','dangky.php');
+$route->add('giohang','giohang.php');
+$route->add('yeuthich','yeuthich.php');
+$route->add('sanpham','sanpham.php');
+$route->add('chitietsp','chitietsp.php');
+$route->add('tintuc','tintuc.php');
+$route->add('thongtintaikhoan','thongtintaikhoan.php');
+$route->add('donhang','donhang.php');
+$route->add('sodiachi','sodiachi.php');

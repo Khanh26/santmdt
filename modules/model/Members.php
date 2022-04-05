@@ -14,7 +14,8 @@ class Member extends dbConnect
             return false;
         }
     }
-}
 
-// $account = new Accounts();
-// $account->getAllAccount();
+    public function getAMember() {
+
+    }
+}
