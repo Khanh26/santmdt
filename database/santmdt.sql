@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Apr 04, 2022 at 03:48 PM
+-- Generation Time: Apr 05, 2022 at 08:56 AM
 -- Server version: 5.7.33
 -- PHP Version: 7.4.19
 
@@ -21,9 +21,6 @@ SET time_zone = "+00:00";
 -- Database: `santmdt`
 --
 
-CREATE DATABASE IF NOT EXISTS santmdt;
-
-USE santmdt;
 -- --------------------------------------------------------
 
 --
@@ -247,7 +244,7 @@ CREATE TABLE `giohang` (
 CREATE TABLE `khach_hang` (
   `ID_KH` int(11) NOT NULL,
   `TEN_DANG_NHAP` varchar(50) NOT NULL,
-  `HOTEN_KH` varchar(30) DEFAULT NULL,
+  `HOTEN` varchar(30) DEFAULT NULL,
   `NGAYSINH` date DEFAULT NULL,
   `GIOITINH` varchar(4) DEFAULT NULL,
   `SDT` varchar(10) DEFAULT NULL,
@@ -258,9 +255,11 @@ CREATE TABLE `khach_hang` (
 -- Dumping data for table `khach_hang`
 --
 
-INSERT INTO `khach_hang` (`ID_KH`, `TEN_DANG_NHAP`, `HOTEN_KH`, `NGAYSINH`, `GIOITINH`, `SDT`, `EMAIL`) VALUES
-(6, 'khanh123', 'ÄoÃ n Trá»ng Khanh', NULL, NULL, '0832086239', 'trongkhanh2014@gmail.com'),
-(7, 'b1805692', '123', NULL, NULL, '0832086239', 'trongkhanh2014@gmail.com');
+INSERT INTO `khach_hang` (`ID_KH`, `TEN_DANG_NHAP`, `HOTEN`, `NGAYSINH`, `GIOITINH`, `SDT`, `EMAIL`) VALUES
+(6, 'khanh123', 'Đoàn Trọng Khanh', NULL, NULL, '0832086239', 'trongkhanh2014@gmail.com'),
+(7, 'b1805692', '123', NULL, NULL, '0832086239', 'trongkhanh2014@gmail.com'),
+(9, 'trongkhanh2014@gmail.com', 'Khanh Đoàn', NULL, NULL, '0832086239', 'trongkhanh2014@gmail.com'),
+(10, 'khanhabc', 'khanh', NULL, NULL, '123', 'khanhb1805692@student.ctu.edu.vn');
 
 -- --------------------------------------------------------
 
@@ -331,7 +330,7 @@ CREATE TABLE `nhabanle_thamgia` (
 CREATE TABLE `nha_ban_le` (
   `ID_NBL` int(11) NOT NULL,
   `TEN_DANG_NHAP` varchar(50) NOT NULL,
-  `TEN_NBL` varchar(1024) DEFAULT NULL,
+  `HOTEN` varchar(1024) DEFAULT NULL,
   `NGAYTHAMGIA` date DEFAULT NULL,
   `AVATAR_NBL` varchar(50) DEFAULT NULL,
   `SDT` varchar(11) DEFAULT NULL,
@@ -400,7 +399,10 @@ CREATE TABLE `taikhoan` (
 
 INSERT INTO `taikhoan` (`TEN_DANG_NHAP`, `MATKHAU`, `NGAYLAP_TK`) VALUES
 ('b1805692', '202cb962ac59075b964b07152d234b70', '2022-04-04 22:45:03'),
-('khanh123', '123', '2022-04-04 22:43:34');
+('khanh111', '202cb962ac59075b964b07152d234b70', '2022-04-05 15:22:25'),
+('khanh123', '123', '2022-04-04 22:43:34'),
+('khanhabc', '202cb962ac59075b964b07152d234b70', '2022-04-05 15:53:50'),
+('trongkhanh2014@gmail.com', '202cb962ac59075b964b07152d234b70', '2022-04-05 15:31:08');
 
 -- --------------------------------------------------------
 
@@ -737,7 +739,7 @@ ALTER TABLE `giohang`
 -- AUTO_INCREMENT for table `khach_hang`
 --
 ALTER TABLE `khach_hang`
-  MODIFY `ID_KH` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `ID_KH` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `khuyenmai`
@@ -767,7 +769,7 @@ ALTER TABLE `loai_sp`
 -- AUTO_INCREMENT for table `nha_ban_le`
 --
 ALTER TABLE `nha_ban_le`
-  MODIFY `ID_NBL` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID_NBL` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `quangcao`

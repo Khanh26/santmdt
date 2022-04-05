@@ -23,6 +23,11 @@ class Accounts extends dbConnect
         echo $_SESSION['user']['TEN_DANG_NHAP'];
     }
 
+    public function getNameBySession()
+    {
+        echo $_SESSION['user']['HOTEN'];
+    }
+
     public function isUsernameExist($username)
     {
         $stmt = $this->connect()->prepare('SELECT TEN_DANG_NHAP FROM `taikhoan` WHERE TEN_DANG_NHAP=?');
@@ -55,12 +60,13 @@ class Accounts extends dbConnect
     public function login($username, $password, $role)
     {
         if($role == 'khachhang') {
-            $stmt = $this->connect()->prepare('SELECT * FROM `taikhoan` WHERE `taikhoan`.TEN_DANG_NHAP = `khachhang`.`TEN_DANG_NHAP` AND `taikhoan`.TEN_DANG_NHAP=? AND `taikhoan`.MATKHAU=?');
+            $stmt = $this->connect()->prepare('SELECT `khach_hang`.ID_KH, `taikhoan`.TEN_DANG_NHAP, `khach_hang`.HOTEN FROM `taikhoan`, `khach_hang` WHERE `taikhoan`.TEN_DANG_NHAP = `khach_hang`.`TEN_DANG_NHAP` AND `taikhoan`.TEN_DANG_NHAP=? AND `taikhoan`.MATKHAU=?');
         } else {
-            $stmt = $this->connect()->prepare('SELECT * FROM `taikhoan` WHERE `taikhoan`.TEN_DANG_NHAP = `nha_ban_le`.`TEN_DANG_NHAP` AND `taikhoan`.TEN_DANG_NHAP=? AND `taikhoan`.MATKHAU=?');
+            $stmt = $this->connect()->prepare('SELECT `nha_ban_le`.ID_KH, `taikhoan`.TEN_DANG_NHAP, `nha_ban_le`.HOTEN FROM `taikhoan`, `nha_ban_le` WHERE `taikhoan`.TEN_DANG_NHAP = `nha_ban_le`.`TEN_DANG_NHAP` AND `taikhoan`.TEN_DANG_NHAP=? AND `taikhoan`.MATKHAU=?');
         }
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
         if (!$stmt->execute(array($username, $password))) {
+            echo "error connect";
             $stmt = null;
             exit();
         }
