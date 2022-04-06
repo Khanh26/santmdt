@@ -10,11 +10,10 @@ class Accounts extends dbConnect
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
         if ($stmt->execute()) {
             // header('Content/type: application/json');
-            return json_encode($stmt->fetchAll());
+            return ($stmt->fetchAll());
         } else {
-            // page error
+            return 'Error connect';
         }
-
         $stmt = null;
     }
 

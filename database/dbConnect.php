@@ -19,4 +19,8 @@ class dbConnect
     public function baseSite() {
         return 'http://localhost/santmdt';
     }
+
+    public function responseJson($array) {
+        echo json_encode($array);
+    }
 }
