@@ -43,7 +43,7 @@
         $phone = trim($_POST['phone']);
         $password = md5($_POST['password']);
         if ($role == 'khachhang') {
-            if ($account->addAccount($username, $password) && $member->addMember($username, $name, $phone, $email)) {
+            if ($account->add($username, $password) && $member->add($username, $name, $phone, $email)) {
     ?>
                 <script>
                     alert('Tạo tài khoản thành công');
@@ -64,7 +64,7 @@
         }
 
         if ($role == 'nhabanle') {
-            if ($account->addAccount($username, $password) && $retailers->addRetailers($username, $name, $phone, $email)) {
+            if ($account->add($username, $password) && $retailers->add($username, $name, $phone, $email)) {
             ?>
 
                 <script>

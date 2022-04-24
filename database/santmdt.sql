@@ -27,8 +27,8 @@ SET time_zone = "+00:00";
 -- Table structure for table `admin`
 --
 CREATE DATABASE IF NOT EXISTS santmdt;
-USE santmdt;
 SET NAMES utf8mb4;
+USE santmdt;
 
 CREATE TABLE `admin` (
   `ID_ADMIN` int(11) NOT NULL,

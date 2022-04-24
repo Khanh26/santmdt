@@ -4,12 +4,12 @@ require_once __DIR__ . '../../../database/dbConnect.php';
 
 class Villages extends dbConnect
 {
-    public function addVillage()
+    public function add()
     {
         
     }
 
-    public function getAllVillages() {
+    public function getAll() {
         
     }
 }

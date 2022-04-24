@@ -16,3 +16,5 @@ Các File index.php, Route.php,dbConnect không ai được chỉnh sửa.
 - folder API để return data JSON
 5. Database</br>
 - Connect tới DB và script DB
+
+Thư đã làm model:

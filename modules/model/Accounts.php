@@ -4,7 +4,7 @@ require_once __DIR__ . '../../../database/dbConnect.php';
 
 class Accounts extends dbConnect
 {
-    public function getAllAccount()
+    public function getAll()
     {
         $stmt = $this->connect()->prepare('SELECT * FROM `taikhoan`');
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
@@ -45,7 +45,7 @@ class Accounts extends dbConnect
         $stmt = null;
     }
 
-    public function addAccount($username, $password)
+    public function add($username, $password)
     {
         $stmt = $this->connect()->prepare('INSERT INTO `taikhoan`(`TEN_DANG_NHAP`, `MATKHAU`) VALUES (?,?)');
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
@@ -97,6 +97,4 @@ class Accounts extends dbConnect
         return false;
     }
 }
-
 // $account = new Accounts();
-// $account->getAllAccount();
