@@ -147,10 +147,10 @@
                             <ul>
                                 <u><b>Giải Pháp Kỹ Thuật</b></u>
                                 <li>
-                                    Xoài
+                                    <a href="http://localhost/santmdt/tintuc/html/xoai.php">Xoài</a>
                                 </li>
                                 <li>
-                                    Cà Phê
+                                    <a href="http://localhost/santmdt/tintuc/html/cf.php">Cà Phê</a>
                                 </li>
                                 <li>
                                     Hoa Cúc

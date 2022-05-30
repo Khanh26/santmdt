@@ -273,7 +273,8 @@ $array = $product->getAll();
                         <img class="theimg" src="http://localhost/santmdt/public/img/hoa-mai-vang.jpg" alt="">
                         <p class="thep">Mai có xuất xứ từ cây hoang dại, có khả năng thích ứng tốt với điều kiện khí hậu nhiệt đới,
                             đặc biệt với khí hậu miền Nam. Cây mai sinh trưởng và phát triển mạnh,
-                            có tuổi thọ cao và nếu được chăm sóc chu đáo sẽ cho hoa nhiều và có màu sắc đẹp.</p>
+                            có tuổi thọ cao và nếu được chăm sóc chu đáo sẽ cho hoa nhiều và có màu sắc đẹp.
+                            <a href="http://localhost/santmdt/tintuc/html/hoamai.php"><b>Xem Thêm</b></a></p>
                     </article>
                     <article class="con5-2-1">
                         <a class="thea" href="">
@@ -282,16 +283,20 @@ $array = $product->getAll();
                         <img class="theimg" src="http://localhost/santmdt/public/img/ky_thuat_trong_ca_phe.jpg" alt="">
                         <p class="thep">Mai có xuất xứ từ cây hoang dại, có khả năng thích ứng tốt với điều kiện khí hậu nhiệt đới,
                             đặc biệt với khí hậu miền Nam. Cây mai sinh trưởng và phát triển mạnh,
-                            có tuổi thọ cao và nếu được chăm sóc chu đáo sẽ cho hoa nhiều và có màu sắc đẹp.</p>
-
+                            có tuổi thọ cao và nếu được chăm sóc chu đáo sẽ cho hoa nhiều và có màu sắc đẹp.
+                            <a href="http://localhost/santmdt/tintuc/html/cf.php"><b>Xem Thêm</b></a>
+                        </p>
+                            
                     </article>
                     <article class="con5-2-1">
                         <a class="thea" href="">
                             <h4>GIỚI THIỆU QUY TRÌNH TRỒNG XOÀI, HƯỚNG DẪN CHĂM SÓC CÂY XOÀI</h4>
                         </a>
                         <img class="theimg" src="http://localhost/santmdt/public/img/cay-xoai-6.jpg" alt="">
-                        <p class="thep">Giới thiệu quy trình kỹ thuật trồng cà phê, hướng dẫn chăm sóc cây cà phê cho năng suất cao và ổn định.
-                            Ngoài việc lựa chọn giống cà phê đạt tiêu chuẩn, có xuất xứ rõ ràng, thì kỹ thuật trồng cũng quyết định không nhỏ đến sinh trưởng và năng suất của vườn cà phê.
+                        <p class="thep">Xoài là giống hoa quả nhiệt đới, đặc biệt phù hợp với điều kiện thời tiết nước ta nên cây trồng thường sinh trưởng, 
+                                        phát triển tốt cho năng suất và chất lượng cao. 
+                                        Do đó, đây là một trong những giống cây ăn quả được trồng phổ biến nhất hiện nay. 
+                            <a href="http://localhost/santmdt/tintuc/html/xoai.php"><b>Xem Thêm</b></a>
                         </p>
 
                     </article>
