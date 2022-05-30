@@ -14,8 +14,4 @@ class Member extends dbConnect
             return false;
         }
     }
-
-    public function getOne() {
-
-    }
 }

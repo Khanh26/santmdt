@@ -1,4 +1,8 @@
-
+<?php
+require_once __DIR__ . '../../../modules/model/Cart.php';
+$cart = new Cart();
+$array = $cart->getByKH($_SESSION['user']['ID_KH']);
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -56,54 +60,34 @@
                         </div>
                     </div>
                     <div class="content-body-cart">
-                        <div class="item-cart">
-                            <div class="choose-all-product item-cart-heading">
-                                <input type="checkbox" name="chooseAllProducts" class="chooseOneProduct">
-                                <label for="" class="heading-product">
-                                    <img src="http://localhost/santmdt/public/img/sanpham/voibot.jpg" class="img-product" alt="">
-                                    <div class="information-product">
-                                        <a href="" class="title-product">Vôi Bột hàng chất lượng</a>
-                                        <a href="" class="shop-product">Cửa hàng: Shop Alone</a>
-                                    </div>
-                                </label>
-                            </div>
-                            <div class="price-one item-cart-heading">199.000</div>
-                            <div class="number item-cart-heading">
-                                <div class="block-number">
-                                    <button class="btn-number-product btnDownProduct">-</button>
-                                    <input type="text" name="" value="1" class="number-product">
-                                    <button class="btn-number-product btnUpProduct">+</button>
+                        <?php foreach ($array as $row) { ?>
+                            <div class="item-cart">
+                                <div class="choose-all-product item-cart-heading">
+                                    <input type="checkbox" name="chooseAllProducts" class="chooseOneProduct">
+                                    <label for="" class="heading-product">
+                                        <img src="http://localhost/santmdt/public/img/sanpham/<?php echo $row['HINH'][0]['ten_hinh'] ?>" class="img-product" alt="">
+                                        <div class="information-product">
+                                            <a href="" class="title-product"><?php echo $row['TEN_SP'] ?></a>
+                                            <a href="" class="shop-product">Cửa hàng: <?php echo $row['TEN_DANG_NHAP'] ?></a>
+                                        </div>
+                                    </label>
                                 </div>
-                            </div>
-                            <div class="price item-cart-heading">199.000</div>
-                            <div class="btnDelete-block item-cart-heading"><button class="btnDelete" title="Xóa"><i class="far fa-trash-alt"></i></button></div>
-                        </div>
-                        <hr>
-                        <div class="item-cart">
-                            <div class="choose-all-product item-cart-heading">
-                                <input type="checkbox" name="chooseAllProducts" class="chooseOneProduct">
-                                <label for="" class="heading-product">
-                                    <img src="http://localhost/santmdt/public/img/sanpham/may-cat-co-mishubishi-do.jpeg" class="img-product" alt="">
-                                    <div class="information-product">
-                                        <a href="" class="title-product">Máy cắt cỏ Mishubishi</a>
-                                        <a href="" class="shop-product">Cửa hàng: Shop Alone</a>
+                                <div class="price-one item-cart-heading"><?php echo $row['GIA'][0]['GIA'] ?></div>
+                                <div class="number item-cart-heading">
+                                    <div class="block-number">
+                                        <button class="btn-number-product btnDownProduct">-</button>
+                                        <input type="text" name="" value="<?php echo $row['SL_SP_GH'] ?>" class="number-product">
+                                        <button class="btn-number-product btnUpProduct">+</button>
                                     </div>
-                                </label>
-                            </div>
-                            <div class="price-one item-cart-heading">199.000</div>
-                            <div class="number item-cart-heading">
-                                <div class="block-number">
-                                    <button class="btn-number-product btnDownProduct">-</button>
-                                    <input type="text" name="" value="1" class="number-product">
-                                    <button class="btn-number-product btnUpProduct">+</button>
                                 </div>
+                                <div class="price item-cart-heading"><?php echo $row['SL_SP_GH'] * $row['GIA'][0]['GIA'] ?></div>
+                                <div class="btnDelete-block item-cart-heading"><button class="btnDelete" title="Xóa"><i class="far fa-trash-alt"></i></button></div>
                             </div>
-                            <div class="price item-cart-heading">199.000</div>
-                            <div class="btnDelete-block item-cart-heading"><button class="btnDelete"><i class="far fa-trash-alt"></i></button></div>
-                        </div>
+                            <hr>
+                        <?php } ?>
                     </div>
                     <div class="btnCheckout-block">
-                        <a href="" class="link-cart-checkout">MUA HÀNG</a>
+                        <a href="http://localhost/santmdt/?router=thanhtoan" class="link-cart-checkout">MUA HÀNG</a>
                     </div>
                 </div>
             </div>

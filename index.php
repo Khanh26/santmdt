@@ -1,5 +1,5 @@
-<!-- file này ko ai được dụng tới -->
 <?php
+session_start();
 include './router/configRoute.php';
 if (isset($_GET['router'])) {
     if($_GET['router'] == 'admin') {

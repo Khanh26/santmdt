@@ -132,3 +132,34 @@
 .content-body-cart {
     margin-top: 0!important;
 }
+
+.w-content {
+    width: max-content;
+    display: inline-block!important;
+}
+
+.btnAdd {
+    margin-top: 16px;
+    padding: 4px 6px;
+    cursor: pointer;
+    border: 1px solid black;
+    display: block;
+    width: max-content;
+    color: black;
+}
+
+#formAddProduct {
+    text-align: center;
+}
+
+.d-form {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-bottom: 8px;
+}
+.btnSubmitAdd {
+    margin-top: 10px;
+    padding: 6px;
+    cursor: pointer;
+}

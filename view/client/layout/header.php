@@ -1,4 +1,3 @@
-
 <div id="header">
     <div id="he1">
         <a href="http://localhost/santmdt" class="link-header-home">
@@ -29,11 +28,11 @@
     <div id="he4">
         <div id="he4-1">
             <div id="cart">
-                <a href="http://localhost/santmdt/?router=giohang" class="link-header"><i class="fas fa-shopping-cart icon-cart icon-header"><span class="count-cart">2</span></i>Giỏ hàng</a>
+                <a href="http://localhost/santmdt/?router=giohang" class="link-header"><i class="fas fa-shopping-cart icon-cart icon-header"></i>Giỏ hàng</a>
 
             </div>
             <div id="wishlist">
-                <a href="http://localhost/santmdt/?router=yeuthich" class="link-header"><i class="fas fa-heart icon-cart icon-header"><span class="count-cart">2</span></i>Yêu thích</a>
+                <a href="http://localhost/santmdt/?router=yeuthich" class="link-header"><i class="fas fa-heart icon-cart icon-header"></i>Yêu thích</a>
             </div>
         </div>
         <div id="he4-2">

@@ -45,26 +45,38 @@ class Accounts extends dbConnect
         $stmt = null;
     }
 
-    public function add($username, $password)
+    public function add($username, $password, $role)
     {
-        $stmt = $this->connect()->prepare('INSERT INTO `taikhoan`(`TEN_DANG_NHAP`, `MATKHAU`) VALUES (?,?)');
+        $stmt = $this->connect()->prepare('INSERT INTO `taikhoan`(`TEN_DANG_NHAP`, `MATKHAU`, `ROLE`) VALUES (?,?,?)');
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
-        if ($stmt->execute(array($username, $password))) {
+        if ($stmt->execute(array($username, $password, $role))) {
             return true;
         } else {
             return false;
         }
     }
+    // ví dụ:
+    public function getAllAccount()
+    {
+        $query = $this->connectMysqli()->query("SELECT * FROM `taikhoan`");
+        if ($query->num_rows > 0) {
+            return $query->fetch_all();
+        } else {
+            echo "0 results";
+        }
+        $this->connectMysqli()->close();
+    }
+
 
     public function login($username, $password, $role)
     {
-        if($role == 'khachhang') {
-            $stmt = $this->connect()->prepare('SELECT `khach_hang`.ID_KH, `taikhoan`.TEN_DANG_NHAP, `khach_hang`.HOTEN FROM `taikhoan`, `khach_hang` WHERE `taikhoan`.TEN_DANG_NHAP = `khach_hang`.`TEN_DANG_NHAP` AND `taikhoan`.TEN_DANG_NHAP=? AND `taikhoan`.MATKHAU=?');
+        if ($role == 1) {
+            $stmt = $this->connect()->prepare('SELECT * FROM `taikhoan`, `khach_hang` WHERE `taikhoan`.TEN_DANG_NHAP = `khach_hang`.`TEN_DANG_NHAP` AND `taikhoan`.TEN_DANG_NHAP=? AND `taikhoan`.MATKHAU=? AND `taikhoan`.ROLE=?');
         } else {
-            $stmt = $this->connect()->prepare('SELECT `nha_ban_le`.ID_KH, `taikhoan`.TEN_DANG_NHAP, `nha_ban_le`.HOTEN FROM `taikhoan`, `nha_ban_le` WHERE `taikhoan`.TEN_DANG_NHAP = `nha_ban_le`.`TEN_DANG_NHAP` AND `taikhoan`.TEN_DANG_NHAP=? AND `taikhoan`.MATKHAU=?');
+            $stmt = $this->connect()->prepare('SELECT * FROM `taikhoan`, `nha_ban_le` WHERE `taikhoan`.TEN_DANG_NHAP = `nha_ban_le`.`TEN_DANG_NHAP` AND `taikhoan`.TEN_DANG_NHAP=? AND `taikhoan`.MATKHAU=? AND `taikhoan`.ROLE=?');
         }
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
-        if (!$stmt->execute(array($username, $password))) {
+        if (!$stmt->execute(array($username, $password,$role))) {
             echo "error connect";
             $stmt = null;
             exit();
@@ -78,7 +90,6 @@ class Accounts extends dbConnect
             $stmt = null;
             return 'Tên đăng nhập hoặc mật khẩu không đúng';
         }
-        
     }
 
     public function logout()
@@ -91,7 +102,6 @@ class Accounts extends dbConnect
 
     public function isLogin()
     {
-        session_start();
         if (isset($_SESSION['user']))
             return true;
         return false;

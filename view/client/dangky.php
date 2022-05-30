@@ -42,14 +42,13 @@
         $name = trim($_POST['fullname']);
         $phone = trim($_POST['phone']);
         $password = md5($_POST['password']);
-        if ($role == 'khachhang') {
-            if ($account->add($username, $password) && $member->add($username, $name, $phone, $email)) {
+        if ($role == '1') {
+            if ($account->add($username, $password, $role) && $member->add($username, $name, $phone, $email)) {
     ?>
                 <script>
                     alert('Tạo tài khoản thành công');
                     window.location = "http://localhost/santmdt/?router=dangnhap";
                 </script>
-
             <?php
 
             } else {
@@ -63,10 +62,9 @@
             }
         }
 
-        if ($role == 'nhabanle') {
-            if ($account->add($username, $password) && $retailers->add($username, $name, $phone, $email)) {
+        if ($role == '0') {
+            if ($account->add($username, $password, $role) && $retailers->add($username, $name, $phone, $email)) {
             ?>
-
                 <script>
                     alert('Tạo tài khoản thành công');
                     window.location = "http://localhost/santmdt/?router=dangnhap";
@@ -93,8 +91,8 @@
             <div class="agileits-top">
                 <form action="" method="POST">
                     <select name="role" id="role">
-                        <option value="khachhang">Vai trò: Khách hàng</option>
-                        <option value="nhabanle">Vai trò: Nhà bán lẻ</option>
+                        <option value="1">Vai trò: Khách hàng</option>
+                        <option value="0">Vai trò: Nhà bán lẻ</option>
                     </select>
                     <input class="text" type="text" id="username" name="username" placeholder="Tên đăng nhập" required>
                     <input class="text inputName" type="text" name="fullname" placeholder="Họ và tên" required>
@@ -113,10 +111,6 @@
                 </form>
                 <p>Bạn đã có tài khoản? <a href="http://localhost/santmdt/?router=dangnhap"> Đăng nhập ngay!</a></p>
             </div>
-        </div>
-        <!-- copyright -->
-        <div class="colorlibcopy-agile">
-
         </div>
     </div>
     <!-- //main -->

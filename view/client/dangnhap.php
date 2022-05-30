@@ -46,8 +46,8 @@ if (isset($_POST['submitLogin'])) {
                 <?php echo $result != null ? '<h2 class="message">' . $result . '</h2>' : '' ?>
                 <form action="" method="post">
                     <select name="role" id="role">
-                        <option value="khachhang">Vai trò: Khách hàng</option>
-                        <option value="nhabanle">Vai trò: Nhà bán lẻ</option>
+                        <option value="1">Vai trò: Khách hàng</option>
+                        <option value="0">Vai trò: Nhà bán lẻ</option>
                     </select>
                     <input class="text inputUsername" type="text" name="username" placeholder="Tên đăng nhập" required>
                     <input class="text" type="password" name="password" placeholder="Mật khẩu" required>

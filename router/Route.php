@@ -12,6 +12,7 @@ class Route
             'page' => $page,
         ]);
     }
+
     public function getAll()
     {
         return $this->Route;

@@ -10,7 +10,7 @@
         </div>
         <div class="body-header-sidebar">
             <p class="quote-sidebar">Tài khoản của</p>
-            <h4 class="heading-username">Đoàn Trọng Khanh</h4>
+            <h4 class="heading-username"><?php echo $_SESSION['user']['HOTEN'] ?></h4>
         </div>
     </div>
 

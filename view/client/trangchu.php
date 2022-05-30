@@ -1,3 +1,8 @@
+<?php
+require_once __DIR__ . '../../../modules/model/Products.php';
+$product = new Products();
+$array = $product->getAll();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,10 +30,9 @@
             <div id="content0">
                 <div id="cnt0-1">
                     <div class="w3-content w3-display-container" id="slideshow">
-                        <img style="width: 100%; height: 100%; border-radius: 5px;" class="mySlides" src="https://www.phanbonnauy.com/resource/images/2020/06/32277650403c075dde0a2061bb8fbb62.jpg">
-                        <img style="width: 100%; height: 100%; border-radius: 5px;" class="mySlides" src="https://camau.gov.vn/wps/wcm/connect/2be19436-d79d-48c0-8260-c77e093ba286/a12.png?MOD=AJPERES&CVID=">
-                        <img style="width: 100%; height: 100%; border-radius: 5px;" class="mySlides" src="https://viettrunggroup.com/wp-content/grand-media/image/Actaone-247WP.jpg">
-                        <img style="width: 100%; height: 100%; border-radius: 5px;" class="mySlides" src="https://noma.vn/wp-content/uploads/2021/04/lam-vuon-min.jpg">
+                        <img style="width: 100%; height: 100%; border-radius: 5px;" class="mySlides" src="http://localhost/santmdt/public/img/1.jpg">
+                        <img style="width: 100%; height: 100%; border-radius: 5px;" class="mySlides" src="http://localhost/santmdt/public/img/2.jpg">
+                        <img style="width: 100%; height: 100%; border-radius: 5px;" class="mySlides" src="http://localhost/santmdt/public/img/3.jpg">
                         <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
                         <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
                     </div>
@@ -232,13 +236,36 @@
                 best seller
             </div> -->
 
+            <div id="content4">
+                <div class="con5-1">
+                    <h3><b>Sản phẩm</b></h3>
+                </div>
+                <div class="list-product">
+                    <?php foreach ($array as $row) { ?>
+                        <div class="item-product">
+                            <div class="block-img">
+                                <img src="http://localhost/santmdt/public/img/sanpham/<?php echo $row['HINH'][0]['ten_hinh'] ?>" class="img-product" alt="">
+                            </div>
+                            <div class="block-content">
+                                <h4 class="name-product"><?php echo $row['TEN_SP'] ?></h4>
+                                <p class="shop-product">Shop: <?php echo $row['TEN_DANG_NHAP'] ?></p>
+                                <p class="price-product">Giá: <?php echo $row['GIA'][0]['GIA'] ?>đ</p>
+                                <a href="http://localhost/santmdt/?router=chitietsp&id=<?php echo $row['ID_SP'] ?>" class="btnAddCart">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    <?php } ?>
+                </div>
+            </div>
+            <div class="block-more">
+                <a href="http://localhost/santmdt/?router=sanpham" class="link-more">Các sản phẩm khác</a>
+            </div>
+
             <div id="content5">
                 <div class="con5-1">
                     <h3><b>BÀI VIẾT NỔI BẬT</b> </h3>
                 </div>
+
                 <div class="con5-2">
-
-
                     <article class="con5-2-1">
                         <a class="thea" href="">
                             <h4>QUY TRÌNH TRỒNG VÀ CHẮM SÓC CÂY MAI ĐÚNG KỸ THUẬT</h4>
@@ -270,7 +297,7 @@
                     </article>
                 </div>
 
-                            
+
             </div>
         </div>
         <!-- End content -->
